@@ -9,6 +9,9 @@ controls facts, formal conditions, evidence, safety, persistence, and decisions.
 The Skill chooses the cognitive entry point, representation, span, and final
 compression.
 
+Current release: `v1.0.0`. See [VERSIONING.md](VERSIONING.md) for the SemVer
+contract and [CHANGELOG.md](CHANGELOG.md) for release history.
+
 ## Install
 
 ```bash

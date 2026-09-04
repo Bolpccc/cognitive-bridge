@@ -1,10 +1,13 @@
 {
+  "schema_version": 1,
   "repository": "Bolpccc/cognitive-bridge",
+  "repository_version": "1.0.0",
   "visibility": "public",
   "external_skills": [],
   "skills": [
     {
       "name": "cognitive-bridge",
+      "version": "1.0.0",
       "path": ".",
       "visibility": "public",
       "depends_on": [],
@@ -13,4 +16,3 @@
     }
   ]
 }
-

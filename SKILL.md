@@ -1,6 +1,8 @@
 ---
 name: cognitive-bridge
 description: "Shape a non-trivial explanation around the user's evidenced current model so they can form a faithful, usable mental model quickly. Use when explaining technical mechanisms, engineering plans or results, abstract concepts, formulas, decision structures, or other material whose raw answer would be correct but cognitively hard to absorb, and when an upstream Skill explicitly requests a cognitive explanation pass. Do not use merely to polish prose, supply missing domain facts, replace a specialist workflow, or withhold a direct answer the user asked for."
+metadata:
+  version: 1.0.0
 ---
 
 # Cognitive Bridge
