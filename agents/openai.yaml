@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cognitive Bridge"
+  short_description: "Build faithful mental models with less cognitive cost"
+  default_prompt: "Use $cognitive-bridge to explain this from my current mental model without losing facts, boundaries, or evidence."

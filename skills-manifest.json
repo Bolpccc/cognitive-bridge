@@ -1,0 +1,16 @@
+{
+  "repository": "Bolpccc/cognitive-bridge",
+  "visibility": "public",
+  "external_skills": [],
+  "skills": [
+    {
+      "name": "cognitive-bridge",
+      "path": ".",
+      "visibility": "public",
+      "depends_on": [],
+      "routes_to": [],
+      "install_target": "~/.codex/skills/cognitive-bridge"
+    }
+  ]
+}
+
