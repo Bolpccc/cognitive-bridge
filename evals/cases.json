@@ -1,0 +1,43 @@
+[
+  {
+    "id": "bridge-action",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "设备只有速度低于0.2 m/s才能运动。当前速度未知。我下一步应做什么？请根据这些事实直接回答。",
+    "rubric": [
+      "Lead with obtaining current speed / withholding movement until condition verified",
+      "Preserve strict <0.2 boundary; no invented current speed",
+      "No unsolicited discovery quiz"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-conflict",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "请审查：同一运行实例 R、同一时刻 T、同一有效开关 E，两份同等级权威快照 A 与 B 分别报告 E=true 与 E=false；无法取得更多证据。给出目前可用的状态解释。",
+    "rubric": [
+      "Return semantic-input-conflict and both anchors",
+      "Do not select true or false; state evidence/decision needed"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-formula",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "请解释 F=ma。我知道速度但不懂力。已核对事实：F 是合外力，a 是加速度，m 是恒定质量；这里仅限经典力学惯性系。",
+    "rubric": [
+      "Net force / acceleration / constant mass / inertial frame intact",
+      "Usable changed-condition explanation",
+      "No claim that reader has mastered it"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  }
+]
