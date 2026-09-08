@@ -50,7 +50,8 @@ delayed.
 
 Two authoritative anchors disagree about whether a feature is enabled. Return
 `semantic-input-conflict`, name both anchors, and identify the upstream decision
-or evidence needed. Do not merge them into a fluent claim.
+or evidence needed. Do not merge them into a fluent claim. Complete independent
+parts of the explanation without treating the disputed claim as settled.
 
 ## 9. Direct action is not forced tutoring
 
@@ -64,3 +65,15 @@ A learner says "懂了" after a fluent explanation. Do not claim mastery. When t
 learning workflow needs evidence, offer one small prediction, contrast, or changed
 case; otherwise end without manufacturing a quiz.
 
+## 11. Selective invocation
+
+A routine status report or a direct factual answer with no specific comprehension
+gap should not trigger this Skill merely because it involves engineering or math.
+An explicit user or upstream request still invokes it. A demonstrated conceptual
+gap should receive a useful bridge without requiring a formal request packet.
+
+## 12. Proportional explanation
+
+For a narrow question with adequate evidence, a short explanation may be complete.
+Do not require ten reasoning stages, a second representation, a concluding rule,
+or an understanding check. Preserve every condition that changes the answer.
