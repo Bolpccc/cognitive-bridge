@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.5.0] - 2026-09-29
+
+- Add context-sensitive Chinese explanation guidance: continue the user's thought, expose obscured objects and relations, and keep useful causal and conditional links without forcing rewrites.
+- Add three anonymized, different-length contrast examples as optional guidance; preserve technical terms, uncertainty, and source facts without a generic prose-polishing workflow or Humanizer-zh dependency.
+- Extend semantic and held-out evaluation cases for directness, naturalness, unchanged clear wording, and evidence boundaries. Affected installed Skill package is 1.4.0.
+
 ## [1.4.0] - 2026-09-29
 
 - Recognize comprehension gaps from relevant conversational context, including method rationale, stalled work, and condition purpose, while keeping terse prompts selective.

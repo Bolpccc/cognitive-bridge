@@ -2,7 +2,7 @@
 name: cognitive-bridge
 description: "Explain a specific comprehension gap shown in the request or prior context (e.g. 没懂, 为什么这样做, 这一步求不下去, 这个条件有什么用), or an upstream-requested explanation. Bare 梳理/解析 or an image needs context that identifies the learning gap; not for routine answers or prose polishing."
 metadata:
-  version: 1.3.0
+  version: 1.4.0
 ---
 
 # Cognitive Bridge
@@ -79,6 +79,22 @@ teaching owner has not taken responsibility for it. Do not add one when the user
 opts out, withhold a requested answer behind a quiz, or treat a fluent response
 as proof of mastery. Revise the provisional starting point when feedback shows
 that the actual gap differs.
+
+## Natural Chinese Explanation
+
+Continue from the question the user just added and what is already clear; do not
+restart a self-contained article for every follow-up. When an abstract sentence
+hides who or what acts, under which condition, and with what result, expose the
+needed relation rather than merely swapping jargon for colloquial synonyms.
+Keep causal, contrast, and conditional links that help the reader follow the
+argument; remove only prefaces or repetition that add no understanding. Choose
+terms, formality, length, and structure for the task. Do not invent details to
+sound concrete, weaken uncertainty, or rewrite sentences that are already clear.
+An adjacent example or application can help establish or test the same relation;
+use it when it earns its space, without drifting into a separate lesson.
+When Chinese phrasing still obscures the bridge, consult
+[contextual examples](references/chinese-expression-examples.md); borrow their
+decisions, not their wording or facts.
 
 An upstream workflow may supply a Cognitive Bridge Request with `purpose`,
 `source_content`, `must_preserve`, `source_anchors`, `current_model_evidence`, and

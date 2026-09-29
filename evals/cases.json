@@ -159,5 +159,41 @@
     ],
     "files": {},
     "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-zh-slope-sign",
+    "skills": ["cognitive-bridge"],
+    "prompt": "我知道 f''(x)>=0 表示 f'(x) 不减，可为什么不能直接说 f(x) 在递增？只补这个关系。",
+    "rubric": [
+      "Answer the new question directly: a derivative can increase while remaining negative on part of the interval",
+      "Use a sound example or precise sign explanation without replacing the missing relation with jargon",
+      "Keep the distinction between f''>=0 and f'>=0; do not restart a broad lesson or append a quiz"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-zh-support-range",
+    "skills": ["cognitive-bridge"],
+    "prompt": "抽样题里我已经把 K 定义成抽到的次品数。为什么列求和式之前还要确定 K 真正可能取哪些值？不要只说‘先找支持集’。",
+    "rubric": [
+      "Connect possible values of K to which mutually exclusive cases can enter the sum",
+      "Explain that sample size and available defective/nondefective counts constrain K without inventing counts absent from the prompt",
+      "Keep the canonical term if useful but do not let it replace the explanation; an adjacent application may reinforce the same sum-range relation without drifting to a separate topic"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-zh-review-evidence",
+    "skills": ["cognitive-bridge"],
+    "prompt": "purpose=review。报表的新筛选条件在本地预览能显示，单元测试通过；尚未用真实数据或线上负载检查。先说目前确认了什么，再解释为什么还不能说上线表现已验证。",
+    "rubric": [
+      "Lead with preview and unit-test observations, preserving that real data and production load were not checked",
+      "Explain in plain Chinese which missing observations prevent a production-performance claim",
+      "Do not invent failure rates, user results, deployment, or turn the evidence boundary into vague jargon"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
   }
 ]

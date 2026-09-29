@@ -168,3 +168,40 @@ The user asks for the thinking model of a unit before learning individual
 formulas. Show the main objects and dependencies, then use one faithful example
 to explain why that order helps. Do not replace the overview with a taxonomy of
 terms or force a quiz.
+
+## 26. Continue the user's question
+
+The user already understands the two objects but asks how one specific step
+connects them. Answer that new relation directly. Restarting with the field's
+importance, a definition list, or a long article fails even if those statements
+are true. A nearby example or application may stay when it makes the same
+relation easier to see; it should not open a separate lesson.
+
+## 27. Abstract words must not hide the mechanism
+
+An answer says "建立动态反馈机制，持续校准认知状态". Replacing it with
+"根据学习特点调整讲解" remains incomplete when the user needs to know what feedback
+is observed and what changes next. Name the relevant observation and adjustment
+if supported by the source. Do not invent user history, measured effects, or an
+automated learner model merely to sound concrete.
+
+## 28. Keep meaningful connections and register
+
+A concise technical explanation uses "because", "therefore", or "provided"
+to carry a real inference or condition. Do not remove those links for brevity,
+force colloquial language, or ban correct terms. Remove only repetition or
+prefaces with no contribution to understanding.
+
+## 29. Clear text needs no stylistic rewrite
+
+The explanation already names the object, condition, action, and result in
+natural Chinese. Leave its wording alone unless the user's actual gap remains;
+do not introduce a different metaphor, decorative headings, or a new voice to
+demonstrate that the Skill ran.
+
+## 30. Examples are guides, not facts or templates
+
+Use the three contextual Chinese examples only to learn how each response
+supplies its own missing relation. Do not transfer a robot, tangent, integral,
+or their conditions into an unrelated problem, and do not require every answer
+to use the same length or structure as one example.

@@ -4,12 +4,13 @@
 an explanation that helps a person form a faithful, usable mental model with less
 avoidable cognitive work.
 
-It does not humanize prose or replace domain expertise. The source owner still
-controls facts, formal conditions, evidence, safety, persistence, and decisions.
+It is not a general prose humanizer and does not replace domain expertise. The
+source owner still controls facts, formal conditions, evidence, safety,
+persistence, and decisions.
 The Skill chooses the cognitive entry point, representation, span, and final
 compression.
 
-Current release: `v1.4.0`. See [VERSIONING.md](VERSIONING.md) for the SemVer
+Current release: `v1.5.0`. See [VERSIONING.md](VERSIONING.md) for the SemVer
 contract and [CHANGELOG.md](CHANGELOG.md) for release history.
 
 ## Install
@@ -43,6 +44,15 @@ gap. These studies do not establish that this Skill improves human learning:
 The durable aim is to expose the relationships needed for a sound answer while
 preserving the source. Examples, terminology order, overviews, and checks are
 replaceable ways to do that, not a mandatory lesson sequence.
+
+Natural Chinese expression is a writing and task-context choice, not a result
+established by cognitive or neuroscience research. We drew on
+[Humanizer-zh](https://github.com/op7418/Humanizer-zh) for context-sensitive
+checks of empty phrasing, repetition, voice, and preservation of facts and
+certainty. This repository does not depend on or run that editing Skill. Its
+[anonymized contextual examples](references/chinese-expression-examples.md)
+show how explanation choices vary with the user's question; they are not output
+templates or evidence of improved learning.
 
 ## Usage-derived design hypotheses
 
@@ -80,6 +90,9 @@ not statements about following rules. Model evaluation is manual, not a CI job.
 It does not measure human learning or establish a model/Skill superiority claim.
 The fixtures paraphrase the observed requests without publishing original chats,
 screenshots, names, or personal file paths.
+Judge natural phrasing separately from whether the answer supplies the missing
+relation and preserves formal conditions; do not use AI-detection scores as a
+proxy for either outcome.
 
 For a manual comparison, answer the same fixture in fresh contexts with and
 without the Skill, using the same model and source facts. Shuffle and hide the
