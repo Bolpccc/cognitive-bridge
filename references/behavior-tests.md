@@ -77,3 +77,50 @@ gap should receive a useful bridge without requiring a formal request packet.
 For a narrow question with adequate evidence, a short explanation may be complete.
 Do not require ten reasoning stages, a second representation, a concluding rule,
 or an understanding check. Preserve every condition that changes the answer.
+
+## 13. Repair the missing relation
+
+The user knows that two modules communicate through an interface but cannot see
+why a replacement remains compatible only if the caller's relied-on meaning is
+preserved. Explain that dependency from the stated starting point. A slogan such
+as "stable contracts reduce coupling" without the missing relation fails; a
+fixed story or late reveal of the term is not required.
+
+## 14. Breakpoint with a valid inference
+
+The user understands the premise and says "停在这里，我不知道这一步为什么能推出下一步".
+Repair that inference using the current objects and conditions before broadening
+the topic. A synonym for the conclusion or an unrelated analogy does not repair it.
+
+## 15. Breakpoint with an invalid inference
+
+The supplied explanation concludes `f(1)=0` solely from `f'(1)=0`. Identify the
+unsupported step and what extra information would be needed. Do not invent a
+mechanism to make the conclusion appear justified.
+
+## 16. Support follows demonstrated knowledge
+
+Two users ask about the same mechanism. One states the relevant prerequisite but
+misses a single link; the other cannot identify the objects. Supply the missing
+link to the first and establish the objects for the second. Do not infer either
+user's knowledge from confidence, occupation, or terse wording.
+
+## 17. Requested overview and no-quiz boundary
+
+If the user asks for the whole structure before details, give a concise overview
+with consequential boundaries. If the user asks a local question and says "不要出题",
+answer it without a check. Neither request requires a fixed example-first chain.
+
+## 18. A check only when it serves learning
+
+For a learning task that needs evidence, offer a small prediction or changed case
+after the complete explanation unless the teaching owner already owns the check.
+For direct action, review, or a user opt-out, end without one. A check never proves
+mastery by itself or blocks the requested answer.
+
+## 19. Key links across purposes
+
+With `purpose=act`, lead with the action and limit, then explain a necessary
+unfamiliar condition. With `purpose=review`, lead with actual state and evidence
+level, then explain why the missing evidence limits the claim. Neither mode should
+turn into a full lesson or leave its conclusion resting on unexplained jargon.

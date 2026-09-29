@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0] - 2026-09-29
+
+- Identify the user's specific comprehension gap and repair a valid breakpoint without imposing a fixed lesson sequence; flag unsupported inferences instead of explaining them away.
+- Make purpose and depth guide answer order and support while preserving consequential conditions, source order, and evidence ceilings; keep comprehension checks conditional.
+- Add Chinese semantic scenarios and real-task fixtures for local links, invalid steps, overviews, opt-outs, and review explanations.
+- Document research support and its limits, and separate output quality from evidence of human understanding. Affected installed Skill package is 1.2.0.
+
 ## [1.2.0] - 2026-09-08
 
 - Shorten discovery guidance and replace the fixed explanation itinerary with an outcome-based composition contract.

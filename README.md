@@ -2,14 +2,14 @@
 
 `cognitive-bridge` is a public Agent Skill for turning domain-bounded content into
 an explanation that helps a person form a faithful, usable mental model with less
-cognitive work.
+avoidable cognitive work.
 
 It does not humanize prose or replace domain expertise. The source owner still
 controls facts, formal conditions, evidence, safety, persistence, and decisions.
 The Skill chooses the cognitive entry point, representation, span, and final
 compression.
 
-Current release: `v1.2.0`. See [VERSIONING.md](VERSIONING.md) for the SemVer
+Current release: `v1.3.0`. See [VERSIONING.md](VERSIONING.md) for the SemVer
 contract and [CHANGELOG.md](CHANGELOG.md) for release history.
 
 ## Install
@@ -27,6 +27,22 @@ preserving every condition and evidence boundary.
 ```
 
 MIT License. See [LICENSE](LICENSE).
+
+## Design basis
+
+The Skill uses cognitive and learning research to choose support for a specific
+gap. These studies do not establish that this Skill improves human learning:
+
+| Research observation | Design inference and limit |
+|---|---|
+| [Text coherence interacts with background knowledge](https://doi.org/10.1207/s1532690xci1401_1) in experiments with science texts. | Start from knowledge the user has shown and make necessary links explicit. A conversation is not the same setting as those texts. |
+| [Self-explanation prompts improved understanding](https://doi.org/10.1207/s15516709cog1803_3) in a small study of eighth-grade readers. | Ask for a prediction or explanation when the learning task needs evidence, not after every answer. A question alone does not establish mastery. |
+| [The usefulness of instructional support changed with learner experience](https://doi.org/10.1037/0022-0663.92.1.126) in multimedia instruction experiments. | Compress demonstrated prerequisites and expand only the current gap. This does not justify inferring expertise from tone. |
+| [Reported feeling of learning differed from measured learning](https://doi.org/10.1073/pnas.1821936116) in a university physics study. | Evaluate ease of following an answer separately from independent explanation or transfer. Neither measure alone proves this Skill works. |
+
+The durable aim is to expose the relationships needed for a sound answer while
+preserving the source. Examples, terminology order, overviews, and checks are
+replaceable ways to do that, not a mandatory lesson sequence.
 
 ## Validation layers
 
@@ -46,3 +62,12 @@ full-integration check. No command automatically installs dependencies.
 Real-task fixtures live in `evals/cases.json`; their rubrics assess actual outputs,
 not statements about following rules. Model evaluation is manual, not a CI job.
 It does not measure human learning or establish a model/Skill superiority claim.
+
+For a manual comparison, answer the same fixture in fresh contexts with and
+without the Skill, using the same model and source facts. Shuffle and hide the
+conditions before judging whether each answer starts from the supplied knowledge,
+supplies the missing link, avoids needless expansion, and preserves source
+conditions and evidence. Score readability separately from demonstrated
+understanding. Only a learner's own explanation, prediction, or use in a changed
+case can supply the latter evidence; those outcomes require a separate learner
+evaluation and are not inferred from the fixture rubric.

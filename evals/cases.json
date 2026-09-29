@@ -39,5 +39,65 @@
     ],
     "files": {},
     "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-local-link",
+    "skills": ["cognitive-bridge"],
+    "prompt": "我知道任务系统通过接口调用导航，也知道可以换导航算法。但我不明白：为什么说接口稳定，任务系统就不用跟着改？我只卡在这一步。请用目标和完成状态解释。",
+    "rubric": [
+      "Start from the stated knowledge and explain that the caller depends on the goal format and completion meaning",
+      "Explain why a replacement satisfying those same meanings does not require a caller change; a slogan alone fails",
+      "Do not restart a full introduction or add an unrequested quiz"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-invalid-step",
+    "skills": ["cognitive-bridge"],
+    "prompt": "停在这里：已知函数在 x=1 处可导，且 f'(1)=0。原讲解说所以 f(1)=0。请只补出这一步为什么成立；如果推不出来就直说。",
+    "rubric": [
+      "State that f'(1)=0 alone does not imply f(1)=0",
+      "Give a simple counterexample or identify the extra value condition needed",
+      "Do not fabricate a derivation or broaden into an unrelated calculus lesson"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-overview-no-quiz",
+    "skills": ["cognitive-bridge"],
+    "prompt": "我想先看清一个导航系统里任务层、规划层、控制层各自做什么，以及目标怎么往下传。先给简短全貌，再解释它们的关键连接。不要出题。",
+    "rubric": [
+      "Lead with a concise, accurate overview of the three requested layers and goal flow",
+      "Explain the consequential handoff without a forced story-first sequence",
+      "Do not append a comprehension question"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-review-link",
+    "skills": ["cognitive-bridge"],
+    "prompt": "purpose=review。改动只增加控制器状态日志，没有改命令生成；单元测试通过，离线回放、仿真和实车都没跑。先报告实际状态，再解释为什么目前不能说控制效果已验证。",
+    "rubric": [
+      "Lead with the actual implementation and evidence level",
+      "Explain the link between unchanged commands, added observability, and the missing behavior evidence",
+      "Do not imply deployment, simulation, field validation, acceptance, or add a quiz"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-learning-check",
+    "skills": ["cognitive-bridge"],
+    "prompt": "我正在学习为什么函数名和返回字段都没变，调用方仍可能不兼容。我知道调用方会读取成功状态。请讲清这个机制，并用一个小变化让我判断是否还兼容。",
+    "rubric": [
+      "Explain the difference between field shape and the meaning on which the caller relies",
+      "Provide the full explanation before one relevant changed-case check",
+      "Do not claim that the user has mastered the concept"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
   }
 ]
