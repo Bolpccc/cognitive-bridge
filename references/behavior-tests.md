@@ -124,3 +124,47 @@ With `purpose=act`, lead with the action and limit, then explain a necessary
 unfamiliar condition. With `purpose=review`, lead with actual state and evidence
 level, then explain why the missing evidence limits the claim. Neither mode should
 turn into a full lesson or leave its conclusion resting on unexplained jargon.
+
+## 20. Method motive rather than another procedure
+
+The user can follow a proof using a midpoint tangent but asks why anyone would
+choose that tangent to compare an interval average with the midpoint value.
+Connect the target comparison to the tangent's average and the curve-tangent
+difference. Repeating the proof steps without explaining the choice fails.
+
+## 21. Preserve the valid start of a worked attempt
+
+The user correctly substitutes `t = sqrt(x)` and `dx = 2t dt` in an integral but
+then carries a cancelled `t` into the next step. Retain the valid substitution,
+locate the first incorrect expression, and show how its correction changes the
+calculation. Replacing the entire solution with a different method fails.
+
+## 22. Feedback changes the bridge
+
+After an explanation that a constant changes an integral's "structure", the
+user says they still cannot see its effect. Compare the original quantity with
+the added part directly. Repeating "the structure changes" more slowly or
+claiming the user has understood fails.
+
+## 23. Terse context is conditional evidence
+
+"梳理" with a recent, identifiable proof and a visible unresolved inference may
+request a bridge for that inference. The same word or a screenshot without an
+identifiable object or gap does not by itself justify this Skill. Use available
+context, then ask one locating question only if needed; do not fabricate image
+contents or start an unrelated tutorial.
+
+## 24. Visual relation must be faithful
+
+The user asks to see why a downward-curving parabola lies below its midpoint
+tangent and has a smaller interval average. A visual is useful only if the curve
+and line actually touch with the same slope, signs and labels match the stated
+relation, and the average claim follows. An attractive but geometrically wrong
+image fails. No diagram is required for a simple symbolic cancellation.
+
+## 25. Overview before the requested detail
+
+The user asks for the thinking model of a unit before learning individual
+formulas. Show the main objects and dependencies, then use one faithful example
+to explain why that order helps. Do not replace the overview with a taxonomy of
+terms or force a quiz.

@@ -9,7 +9,7 @@ controls facts, formal conditions, evidence, safety, persistence, and decisions.
 The Skill chooses the cognitive entry point, representation, span, and final
 compression.
 
-Current release: `v1.3.0`. See [VERSIONING.md](VERSIONING.md) for the SemVer
+Current release: `v1.4.0`. See [VERSIONING.md](VERSIONING.md) for the SemVer
 contract and [CHANGELOG.md](CHANGELOG.md) for release history.
 
 ## Install
@@ -44,6 +44,22 @@ The durable aim is to expose the relationships needed for a sound answer while
 preserving the source. Examples, terminology order, overviews, and checks are
 replaceable ways to do that, not a mandatory lesson sequence.
 
+## Usage-derived design hypotheses
+
+Anonymized study conversations informed this release. Users repeatedly asked
+why a proof step follows, why a method was chosen, where their own attempt first
+went wrong, or how a local idea fits the whole topic. The Skill now selects
+support for those distinct needs and treats a repeated "still don't understand"
+as evidence to reconsider the diagnosed gap. A short "梳理" or an image can use
+earlier context only when it identifies the learning object and missing link.
+These are design inferences from observed requests, not measured improvements
+in learning or evidence that the pattern applies to every user or subject.
+
+A visual may make a spatial relation easier to inspect, but it can also teach a
+false relationship if the geometry or labels are wrong. The Skill therefore
+allows a visual when useful and requires the represented relation to be checked;
+it does not require one for every explanation or prescribe a production tool.
+
 ## Validation layers
 
 `python3 scripts/validate.py` checks metadata, links, declared dependencies and routes,
@@ -62,6 +78,8 @@ full-integration check. No command automatically installs dependencies.
 Real-task fixtures live in `evals/cases.json`; their rubrics assess actual outputs,
 not statements about following rules. Model evaluation is manual, not a CI job.
 It does not measure human learning or establish a model/Skill superiority claim.
+The fixtures paraphrase the observed requests without publishing original chats,
+screenshots, names, or personal file paths.
 
 For a manual comparison, answer the same fixture in fresh contexts with and
 without the Skill, using the same model and source facts. Shuffle and hide the

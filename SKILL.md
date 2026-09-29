@@ -1,8 +1,8 @@
 ---
 name: cognitive-bridge
-description: "Bridge a specific comprehension gap (e.g. 没懂, 推不出来, 停在这里), or compose an upstream-requested explanation. Not for routine answers or prose polishing."
+description: "Explain a specific comprehension gap shown in the request or prior context (e.g. 没懂, 为什么这样做, 这一步求不下去, 这个条件有什么用), or an upstream-requested explanation. Bare 梳理/解析 or an image needs context that identifies the learning gap; not for routine answers or prose polishing."
 metadata:
-  version: 1.2.0
+  version: 1.3.0
 ---
 
 # Cognitive Bridge
@@ -29,11 +29,25 @@ complete explanation, not a fixed teaching sequence or response template.
 
 ## Compose
 
+Use relevant prior turns, annotations, and the user's worked steps to locate the
+gap. A bare "梳理", "解析", or image does not establish one by itself; use this
+Skill when context identifies the learning object and a needed connection.
+Otherwise answer the stated task normally, or ask one focused question if the
+object cannot be located. Repeated confusion means the previous bridge may have
+missed the gap; do not simply repeat it at greater length.
+
 Find the specific object, relation, justification, or boundary missing between
 the user's demonstrated starting point and the requested understanding. When the
 starting point is uncertain, use a provisional one that the user can correct;
 do not invent a misconception or assume mastery. Supply only the prerequisites
 needed to make the consequential connection explicit.
+
+Match support to the need: for a local inference, show why that step follows or
+why it does not; for a method-choice question, connect the goal and conditions
+to the method's role; for a user-provided attempt, preserve valid work and locate
+the first consequential divergence; for a requested overview, map the main
+objects and dependencies before zooming in. These are choices, not stages to
+run in every answer.
 
 Choose an example, contrast, causal account, formula step, analogy, or overview
 for that gap. Keep an example when continuity helps; replace it if it misleads.
@@ -41,6 +55,11 @@ Use canonical terms and the user's useful phrases, but do not let unfamiliar
 terms stand in for the explanation. For formulas, connect objects and operations
 to their meaning and conditions. Keep conclusion-changing conditions alongside
 the conclusion.
+
+When a spatial or structural relation remains hard to follow, or the user asks
+to see it, consider a diagram or other visual. Check that its geometry, signs,
+labels, and stated relationships are accurate before relying on it. Do not add
+a visual when words or a small calculation make the connection clear enough.
 
 When the user identifies a breakpoint, check that the claimed step follows from
 its premises and source conditions. If it does, repair that connection before

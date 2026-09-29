@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0] - 2026-09-29
+
+- Recognize comprehension gaps from relevant conversational context, including method rationale, stalled work, and condition purpose, while keeping terse prompts selective.
+- Adapt to local inference, method choice, user attempts, and requested overviews; reframe repeated confusion instead of repeating the same explanation.
+- Allow faithful visuals when they clarify a relation and add anonymized semantic scenarios and manual evaluation fixtures from real usage.
+- Preserve source, evidence, authority, and learner-mastery boundaries. Affected installed Skill package is 1.3.0.
+
 ## [1.3.0] - 2026-09-29
 
 - Identify the user's specific comprehension gap and repair a valid breakpoint without imposing a fixed lesson sequence; flag unsupported inferences instead of explaining them away.

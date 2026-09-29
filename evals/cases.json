@@ -99,5 +99,65 @@
     ],
     "files": {},
     "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-method-motive",
+    "skills": ["cognitive-bridge"],
+    "prompt": "我能跟着证明算，但不明白为什么比较区间 [0,2] 上的函数平均值和 f(1) 时，要在 x=1 作切线。请解释这种构造是怎么想到的，不用重做整道证明。已知 f 二阶可导且 f''>=0。",
+    "rubric": [
+      "Connect the target average versus midpoint value to the tangent through (1,f(1))",
+      "Explain that the tangent's linear part averages to zero on the symmetric interval and f''>=0 supports the curve-tangent comparison",
+      "Do not substitute a full proof recital for the method rationale or add an unrequested quiz"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-first-divergence",
+    "skills": ["cognitive-bridge"],
+    "prompt": "我算积分 ∫_1^9 x^(-1/2) dx，令 t=√x，写出 x=t²、dx=2t dt、上下限 1 到 3。接着写成 ∫_1^3 2t dt=8。我的解法从哪里开始有问题？",
+    "rubric": [
+      "Preserve the correct substitution and changed bounds",
+      "Identify the first wrong expression: x^(-1/2)=1/t cancels the t in dx, giving integrand 2 and value 4",
+      "Explain why the correction changes the result without replacing the user's method"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-feedback-reframe",
+    "skills": ["cognitive-bridge"],
+    "prompt": "前面说分子加上常数 2 会改变积分结构，我还是不理解它到底影响了什么。请比较 ∫_1^4 ln(x)/√x dx 与 ∫_1^4 (ln(x)+2)/√x dx，只补这个关系。",
+    "rubric": [
+      "Show that the difference is the added integral ∫_1^4 2/√x dx, equal to 4",
+      "Explain the effect as an added contribution rather than repeating the abstract word structure",
+      "Stay on the stated gap and do not claim learner mastery"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-short-context",
+    "skills": ["cognitive-bridge"],
+    "prompt": "上一轮我们在讨论为什么 f''>=0 时 f' 不减，但不能推出 f'>=0。我现在说：梳理这部分。",
+    "rubric": [
+      "Use the supplied context to distinguish slope increasing from slope positive",
+      "Give a compact connection or counterexample without restarting a broad calculus course",
+      "Do not treat the bare word 梳理 alone as evidence of a different learning gap"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-visual-fidelity",
+    "skills": ["cognitive-bridge"],
+    "prompt": "用一个准确的简单示意，帮我看见 f(x)=-x² 在中点 0 附近与切线的位置，以及为什么对称区间上的平均值小于 f(0)。",
+    "rubric": [
+      "Use the tangent T(x)=0 at x=0 with matching point and slope; show f(x)<=T(x) and strict inequality away from 0",
+      "Relate the symmetric interval average to the inequality without implying every concave function has a horizontal tangent",
+      "Any visual or ASCII sketch must agree with the equations and labels"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
   }
 ]
