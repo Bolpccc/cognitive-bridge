@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.0] - 2026-09-29
+
+- Explain both step validity and usefulness: expose the obstacle, object mapping, changed quantity, and remaining difficulty in unfamiliar derivations.
+- Treat recently presented definitions as exposure, not mastery; interpret procedural follow-ups using demonstrated prerequisite gaps. Prioritize complete connections before compression without imposing a lesson template.
+- Add an anonymized Cauchy mean-value derivation contrast and held-out method-choice, expert, and boundary regressions. Preserve selective activation, bounded extensions, and all ownership and evidence boundaries. Affected installed Skill package is 1.5.0.
+
 ## [1.5.0] - 2026-09-29
 
 - Add context-sensitive Chinese explanation guidance: continue the user's thought, expose obscured objects and relations, and keep useful causal and conditional links without forcing rewrites.

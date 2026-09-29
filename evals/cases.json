@@ -42,7 +42,9 @@
   },
   {
     "id": "bridge-local-link",
-    "skills": ["cognitive-bridge"],
+    "skills": [
+      "cognitive-bridge"
+    ],
     "prompt": "我知道任务系统通过接口调用导航，也知道可以换导航算法。但我不明白：为什么说接口稳定，任务系统就不用跟着改？我只卡在这一步。请用目标和完成状态解释。",
     "rubric": [
       "Start from the stated knowledge and explain that the caller depends on the goal format and completion meaning",
@@ -54,7 +56,9 @@
   },
   {
     "id": "bridge-invalid-step",
-    "skills": ["cognitive-bridge"],
+    "skills": [
+      "cognitive-bridge"
+    ],
     "prompt": "停在这里：已知函数在 x=1 处可导，且 f'(1)=0。原讲解说所以 f(1)=0。请只补出这一步为什么成立；如果推不出来就直说。",
     "rubric": [
       "State that f'(1)=0 alone does not imply f(1)=0",
@@ -66,7 +70,9 @@
   },
   {
     "id": "bridge-overview-no-quiz",
-    "skills": ["cognitive-bridge"],
+    "skills": [
+      "cognitive-bridge"
+    ],
     "prompt": "我想先看清一个导航系统里任务层、规划层、控制层各自做什么，以及目标怎么往下传。先给简短全貌，再解释它们的关键连接。不要出题。",
     "rubric": [
       "Lead with a concise, accurate overview of the three requested layers and goal flow",
@@ -78,7 +84,9 @@
   },
   {
     "id": "bridge-review-link",
-    "skills": ["cognitive-bridge"],
+    "skills": [
+      "cognitive-bridge"
+    ],
     "prompt": "purpose=review。改动只增加控制器状态日志，没有改命令生成；单元测试通过，离线回放、仿真和实车都没跑。先报告实际状态，再解释为什么目前不能说控制效果已验证。",
     "rubric": [
       "Lead with the actual implementation and evidence level",
@@ -90,7 +98,9 @@
   },
   {
     "id": "bridge-learning-check",
-    "skills": ["cognitive-bridge"],
+    "skills": [
+      "cognitive-bridge"
+    ],
     "prompt": "我正在学习为什么函数名和返回字段都没变，调用方仍可能不兼容。我知道调用方会读取成功状态。请讲清这个机制，并用一个小变化让我判断是否还兼容。",
     "rubric": [
       "Explain the difference between field shape and the meaning on which the caller relies",
@@ -102,7 +112,9 @@
   },
   {
     "id": "bridge-method-motive",
-    "skills": ["cognitive-bridge"],
+    "skills": [
+      "cognitive-bridge"
+    ],
     "prompt": "我能跟着证明算，但不明白为什么比较区间 [0,2] 上的函数平均值和 f(1) 时，要在 x=1 作切线。请解释这种构造是怎么想到的，不用重做整道证明。已知 f 二阶可导且 f''>=0。",
     "rubric": [
       "Connect the target average versus midpoint value to the tangent through (1,f(1))",
@@ -114,7 +126,9 @@
   },
   {
     "id": "bridge-first-divergence",
-    "skills": ["cognitive-bridge"],
+    "skills": [
+      "cognitive-bridge"
+    ],
     "prompt": "我算积分 ∫_1^9 x^(-1/2) dx，令 t=√x，写出 x=t²、dx=2t dt、上下限 1 到 3。接着写成 ∫_1^3 2t dt=8。我的解法从哪里开始有问题？",
     "rubric": [
       "Preserve the correct substitution and changed bounds",
@@ -126,7 +140,9 @@
   },
   {
     "id": "bridge-feedback-reframe",
-    "skills": ["cognitive-bridge"],
+    "skills": [
+      "cognitive-bridge"
+    ],
     "prompt": "前面说分子加上常数 2 会改变积分结构，我还是不理解它到底影响了什么。请比较 ∫_1^4 ln(x)/√x dx 与 ∫_1^4 (ln(x)+2)/√x dx，只补这个关系。",
     "rubric": [
       "Show that the difference is the added integral ∫_1^4 2/√x dx, equal to 4",
@@ -138,7 +154,9 @@
   },
   {
     "id": "bridge-short-context",
-    "skills": ["cognitive-bridge"],
+    "skills": [
+      "cognitive-bridge"
+    ],
     "prompt": "上一轮我们在讨论为什么 f''>=0 时 f' 不减，但不能推出 f'>=0。我现在说：梳理这部分。",
     "rubric": [
       "Use the supplied context to distinguish slope increasing from slope positive",
@@ -150,7 +168,9 @@
   },
   {
     "id": "bridge-visual-fidelity",
-    "skills": ["cognitive-bridge"],
+    "skills": [
+      "cognitive-bridge"
+    ],
     "prompt": "用一个准确的简单示意，帮我看见 f(x)=-x² 在中点 0 附近与切线的位置，以及为什么对称区间上的平均值小于 f(0)。",
     "rubric": [
       "Use the tangent T(x)=0 at x=0 with matching point and slope; show f(x)<=T(x) and strict inequality away from 0",
@@ -162,7 +182,9 @@
   },
   {
     "id": "bridge-zh-slope-sign",
-    "skills": ["cognitive-bridge"],
+    "skills": [
+      "cognitive-bridge"
+    ],
     "prompt": "我知道 f''(x)>=0 表示 f'(x) 不减，可为什么不能直接说 f(x) 在递增？只补这个关系。",
     "rubric": [
       "Answer the new question directly: a derivative can increase while remaining negative on part of the interval",
@@ -174,7 +196,9 @@
   },
   {
     "id": "bridge-zh-support-range",
-    "skills": ["cognitive-bridge"],
+    "skills": [
+      "cognitive-bridge"
+    ],
     "prompt": "抽样题里我已经把 K 定义成抽到的次品数。为什么列求和式之前还要确定 K 真正可能取哪些值？不要只说‘先找支持集’。",
     "rubric": [
       "Connect possible values of K to which mutually exclusive cases can enter the sum",
@@ -186,12 +210,101 @@
   },
   {
     "id": "bridge-zh-review-evidence",
-    "skills": ["cognitive-bridge"],
+    "skills": [
+      "cognitive-bridge"
+    ],
     "prompt": "purpose=review。报表的新筛选条件在本地预览能显示，单元测试通过；尚未用真实数据或线上负载检查。先说目前确认了什么，再解释为什么还不能说上线表现已验证。",
     "rubric": [
       "Lead with preview and unit-test observations, preserving that real data and production load were not checked",
       "Explain in plain Chinese which missing observations prevent a production-performance claim",
       "Do not invent failure rates, user results, deployment, or turn the evidence boundary into vague jargon"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-derivation-context",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "前文：用户问过“两个量都趋于零，比值为什么不一定趋于零”和“Cauchy中值定理是什么意思”；助手给过定义，用户尚未展示掌握。当前用户：已知R在0附近二阶连续可导，R(0)=R′(0)=R″(0)=0。你说两次比较就能证明R(x)/x²→0，具体怎么操作？不要出题。",
+    "rubric": [
+      "Explain motive and validity, not just two formulas",
+      "Map functions, endpoints, temporary variable and interior points",
+      "First ratio still has two vanishing quantities; second has constant denominator",
+      "Nested point bound, continuity, both signs of x, no circular proof",
+      "No quiz or inferred mastery"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-factor-heldout",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "我刚学乘积求导，知道(uv)′=u′v+uv′。对于y′+2y=x，答案突然说两边乘e^(2x)。这个具体怎么操作？我不理解这个因子是怎么想到的。",
+    "rubric": [
+      "Motivate turning left side into one derivative",
+      "Map (μy)′=μy′+μ′y and require μ′=2μ",
+      "Identify a valid nonzero integrating factor; if solving further, preserve arbitrary integration constant",
+      "No unnecessary general ODE lecture"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-contract-heldout",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "我知道接口规定输入输出。旧实现换成新实现时，为什么让调用方只经过适配器就能少改代码？请说明实际起作用的地方，别只说解耦。",
+    "rubric": [
+      "Show format/meaning conversion at adapter and preserved caller assumptions",
+      "Do not claim arbitrary semantic differences can be hidden",
+      "Explain why changes stay local only if required contract can be met"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-expert-bound",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "我已经理解两次Cauchy得到R(x)/x²=R″(ξ₂)/2，也知道R″连续且R″(0)=0。只是不明白ξ₂每次不一样，为什么仍能说它趋于零？简短说，不要出题。",
+    "rubric": [
+      "Use |ξ₂|<|ξ₁|<|x| or equivalent bound for either sign",
+      "No fixed point assumption or whole theorem reintroduction",
+      "No quiz"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-invalid-continuity",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "只知道R在0处二阶可导且R(0)=R′(0)=R″(0)=0，能直接说R″(ξ)→R″(0)，照搬两次Cauchy的证明吗？",
+    "rubric": [
+      "No: pointwise twice differentiable does not supply neighborhood second derivative continuity",
+      "Distinguish failure of this proof from falsity of Peano remainder under other valid proof",
+      "Do not manufacture assumptions"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-clear-unchanged",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "检查这句话是否清楚：只有当新实现仍满足调用方依赖的输入、输出和完成含义时，调用方才可能无需修改。若已清楚就保留，不要润色，也不要出题。",
+    "rubric": [
+      "Keep already clear wording; no decorative rewrite",
+      "Preserve necessary contract and qualified possibility",
+      "No quiz"
     ],
     "files": {},
     "allow_fixture_writes": false

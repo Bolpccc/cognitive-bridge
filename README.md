@@ -10,7 +10,7 @@ persistence, and decisions.
 The Skill chooses the cognitive entry point, representation, span, and final
 compression.
 
-Current release: `v1.5.0`. See [VERSIONING.md](VERSIONING.md) for the SemVer
+Current release: `v1.6.0`. See [VERSIONING.md](VERSIONING.md) for the SemVer
 contract and [CHANGELOG.md](CHANGELOG.md) for release history.
 
 ## Install
@@ -102,3 +102,30 @@ conditions and evidence. Score readability separately from demonstrated
 understanding. Only a learner's own explanation, prediction, or use in a changed
 case can supply the latter evidence; those outcomes require a separate learner
 evaluation and are not inferred from the fixture rubric.
+
+## Why a step helps
+
+The [derivation contrast](references/derivation-example.md) addresses a concrete
+failure: correct formulas and theorem names can still leave a beginner to infer
+why those steps were chosen. The design hypothesis is that explaining the
+obstacle, applicability, object mapping, and effect of a step makes the missing
+connection inspectable. It is not a universal sequence of human thought or an
+established neuroscience result. Earlier exposure to a definition is not evidence
+of understanding. Examples are anonymized reconstructions, not source transcripts.
+
+Thinking-partner and cognitive-apprenticeship approaches informed the choice to
+make method decisions visible; we do not import personality diagnoses, mandatory
+mental-model menus, or a fixed coaching sequence. Requested complete answers
+remain available, with necessary conditions and optional relevant extensions.
+
+For release comparisons, use the previous release and candidate in fresh contexts
+with the same model, reasoning setting, case context, and resource access. Keep
+held-out integrating-factor and interface cases out of instructional examples.
+Judge mathematical/domain correctness, method motive, object mapping, key links,
+and unrelated expansion separately. Compare outputs against the deliberately
+weak derivation as well; merely adding headings or length must not pass. Record
+ties and regressions. This manual check complements the existing no-Skill
+comparison and does not supply learner-understanding evidence.
+
+The [v1.6.0 comparison record](evals/results/v1.6.0.md) includes actual outputs,
+ties, partial explanations, and evaluation limitations.

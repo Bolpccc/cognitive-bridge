@@ -205,3 +205,36 @@ Use the three contextual Chinese examples only to learn how each response
 supplies its own missing relation. Do not transfer a robot, tangent, integral,
 or their conditions into an unrelated problem, and do not require every answer
 to use the same length or structure as one example.
+
+## 31. Procedure needs motive after foundational questions
+
+A learner has just asked what a ratio limit and Cauchy's theorem mean, then asks
+how the two comparisons work. Explain why the selected functions and endpoints
+recover the target ratio, how derivatives connect to given information, why the
+first zero-over-zero ratio remains unresolved, and what the constant denominator
+changes. Merely naming the theorem and saying a derivative remains fails.
+Previously displayed definitions do not establish learner mastery.
+
+## 32. Map unfamiliar tools without a universal template
+
+In a held-out integrating-factor problem, connect the multiplier to the product
+rule and identify the equation it must satisfy. In an interface replacement
+problem, explain what callers rely on and what preserving the contract achieves.
+Correct operations without this motive are insufficient; extra headings or a
+longer answer alone do not repair the failure.
+
+## 33. Expert compression and truthful support
+
+A user explicitly demonstrates the two theorem applications and asks only why
+the intermediate point tends to zero. Supply the bound and consequence without
+restarting the proof. If supplied assumptions do not support a claimed step,
+identify the gap; never manufacture continuity or cite the target circularly.
+A quick answer retains necessary conditions, and a no-quiz request gets an answer.
+
+## 34. Completion without compelled discovery
+
+Provide the requested explanation rather than forcing the user to guess a step.
+Motivate a new idea with a real obstacle, not an invented misconception. A useful
+summary or adjacent application is allowed; unrelated lessons are not. Keep
+clear existing wording and all evidence limits. These checks supplement cases
+14–17 and 26–30 rather than prescribing a teaching itinerary.

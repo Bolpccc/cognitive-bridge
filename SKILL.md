@@ -2,14 +2,16 @@
 name: cognitive-bridge
 description: "Explain a specific comprehension gap shown in the request or prior context (e.g. 没懂, 为什么这样做, 这一步求不下去, 这个条件有什么用), or an upstream-requested explanation. Bare 梳理/解析 or an image needs context that identifies the learning gap; not for routine answers or prose polishing."
 metadata:
-  version: 1.4.0
+  version: 1.5.0
 ---
 
 # Cognitive Bridge
 
 Help the user predict, explain, distinguish, act, or transfer an idea by connecting
-the supplied content to what they have shown they understand. Choose the shortest
-complete explanation, not a fixed teaching sequence or response template.
+the supplied content to what they have shown they understand. Make consequential
+connections explicit before compressing the explanation.
+Remove redundancy without making the reader reconstruct the missing reasoning;
+choose the support needed here, not a fixed teaching sequence or response template.
 
 ## Boundaries
 
@@ -39,8 +41,11 @@ missed the gap; do not simply repeat it at greater length.
 Find the specific object, relation, justification, or boundary missing between
 the user's demonstrated starting point and the requested understanding. When the
 starting point is uncertain, use a provisional one that the user can correct;
-do not invent a misconception or assume mastery. Supply only the prerequisites
-needed to make the consequential connection explicit.
+do not invent a misconception or assume mastery. Supply the prerequisites
+needed for the consequential connection. A definition just shown by the assistant
+is exposure, not demonstrated understanding. Recent foundational questions or
+repeated confusion can make "how exactly?" a request for both procedure and
+rationale; do not wait for another explicit "why?".
 
 Match support to the need: for a local inference, show why that step follows or
 why it does not; for a method-choice question, connect the goal and conditions
@@ -55,6 +60,23 @@ Use canonical terms and the user's useful phrases, but do not let unfamiliar
 terms stand in for the explanation. For formulas, connect objects and operations
 to their meaning and conditions. Keep conclusion-changing conditions alongside
 the conclusion.
+
+For an unfamiliar method or multi-step derivation, distinguish why a step is
+valid from why it helps: connect the current obstacle to the chosen operation,
+what changes, and what remains unresolved. At first use, map a theorem or tool's
+objects to this problem and clarify unfamiliar symbol roles and required
+conditions. A theorem name or "repeat because a derivative remains" is not
+that connection. Skip support already demonstrated; these are completeness
+checks, not mandatory headings or a fixed number of steps. When a derivation
+still feels like instructions without reasons, consult the
+[worked derivation contrast](references/derivation-example.md).
+
+Use the user's useful language, correcting misleading meanings. A real obstacle
+may motivate a concept; do not manufacture a contradiction to introduce it.
+Expand when a connection is missing and compress into a usable summary when
+the relationships have been explained. Defer unrelated detail, never a condition
+that changes the conclusion. Do not withhold a requested explanation to preserve
+the user's "discovery" or require them to guess the next step.
 
 When a spatial or structural relation remains hard to follow, or the user asks
 to see it, consider a diagram or other visual. Check that its geometry, signs,
