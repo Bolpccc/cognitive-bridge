@@ -308,5 +308,324 @@
     ],
     "files": {},
     "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-dynamic-counterevidence",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "已授权维护 thinking-model.md。这是新任务 B 的无提示作答：用户主动指出分母须在去心邻域非零，并解释否则不能使用比值形式。请调整下一次帮助，必要时修正模型，不要出题。",
+    "rubric": [
+      "Read the authorized model; treat the new unprompted performance as consequential evidence without waiting for any count",
+      "Narrow the old example-first assumption for this action; leave broader transfer unknown",
+      "Do not infer general intelligence or mastery; preserve full requested answers",
+      "Reread before saving, preserve prior provenance, and read back the actual saved update"
+    ],
+    "files": {
+      "thinking-model.md": "# Thinking model\nGoal: independently choose proof methods.\nObservation: in task A, after a concrete example, the user identified a denominator condition.\nProvisional inference: similar tasks may need a concrete entry example.\nUnknown: independent use in a new task.\n"
+    },
+    "allow_fixture_writes": true
+  },
+  {
+    "id": "bridge-dynamic-no-new-evidence",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "已授权维护 thinking-model.md。后续聊了很多安排事务，也反复提到任务 A 那次提示后成功，没有新的作答。请判断模型是否需要改；没有依据就保留。",
+    "rubric": [
+      "Do not modify the capability judgment simply because many exchanges occurred",
+      "Repeated references to task A do not strengthen its evidence",
+      "No counter, required report, or fabricated ability progress"
+    ],
+    "files": {
+      "thinking-model.md": "# Thinking model\nGoal: independently choose proof methods.\nObservation: in task A, after a concrete example, the user identified a denominator condition.\nProvisional inference: similar tasks may need a concrete entry example.\nUnknown: independent use in a new task.\n"
+    },
+    "allow_fixture_writes": true
+  },
+  {
+    "id": "bridge-dynamic-goal-change",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "已授权维护 thinking-model.md。我现在先想学会发现证明漏掉的条件，暂不以自己完成整份证明为目标。请据此调整帮助。",
+    "rubric": [
+      "Update the declared goal and relevant assistance, preserving the prior observation at its original scope",
+      "Explain or contrast a consequential omitted premise when a concrete task is available",
+      "Do not treat the new goal as growth or prescribe a fixed lesson sequence"
+    ],
+    "files": {
+      "thinking-model.md": "# Thinking model\nGoal: independently choose proof methods.\nObservation: in task A, after a concrete example, the user identified a denominator condition.\nProvisional inference: similar tasks may need a concrete entry example.\nUnknown: independent use in a new task.\n"
+    },
+    "allow_fixture_writes": true
+  },
+  {
+    "id": "bridge-dynamic-wrong-assumption",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "旧模型猜测我不理解符号，但我从一开始就懂符号。我反复问的是为什么选这个方法，别再解释符号。我知道 (uv)′=u′v+uv′，对于 y′+2y=x 为什么乘 e^(2x)？直接解释，不要测验。",
+    "rubric": [
+      "Correct the old assumption rather than claiming new learning of symbols",
+      "Connect a multiplier to making the left side a product derivative; require μ′=2μ",
+      "Complete the requested explanation with no quiz or forced discovery"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-model-continuity",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "这是后续对话。已授权读取 thinking-model.md，但这次不需要写。我已经会检查分母，现在想知道为何可以取极限；对于 1/x，x→0 时为什么非零条件还不够？",
+    "rubric": [
+      "Read the model from disk and adapt to current demonstrated starting point",
+      "Explain that definedness and existence of a finite two-sided limit differ; 1/x diverges with opposite signs",
+      "Do not repeat example-first support or overwrite the model",
+      "File readback alone is not proof of automatic loading in all future chats"
+    ],
+    "files": {
+      "thinking-model.md": "# Thinking model\nGoal: independently choose proof methods.\nObservation: in task A, after a concrete example, the user identified a denominator condition.\nProvisional inference: similar tasks may need a concrete entry example.\nUnknown: independent use in a new task.\n"
+    },
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-model-save-failure",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "已授权维护 thinking-model.md，但环境已明确报告保存失败，请不要改权限或换路径。旧模型需要修正，我在新任务已主动检查分母。先回答：为什么 x² 在 x≠0 时可以放在分母？不要出题。",
+    "rubric": [
+      "Answer the mathematical question completely from available context",
+      "Distinguish a proposed narrower model judgment from a saved one",
+      "Briefly acknowledge the storage limitation; do not change permissions, redirect, loop, or block the answer"
+    ],
+    "files": {
+      "thinking-model.md": "# Thinking model\nGoal: independently choose proof methods.\nObservation: in task A, after a concrete example, the user identified a denominator condition.\nProvisional inference: similar tasks may need a concrete entry example.\nUnknown: independent use in a new task.\n"
+    },
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-joint-versus-independent",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "在 AI 提供全部路线后我完成了解答，但新题仍不会选择方法。请复核这个事实应该怎样影响下一次帮助，不要认定我已掌握。",
+    "rubric": [
+      "Record assisted completion separately from independent method choice",
+      "Consider showing an inspectable decision rationale or supported attempt, preserving a complete answer when requested",
+      "No universal weakness label, score, forced quiz, or claim of improved model weights"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-development-without-confusion",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "我不是哪里没懂。我想在接下来比较两个方案时，练习找出什么观察能真正区分它们。方案 P 认为延迟发生在输入读取，方案 Q 认为延迟发生在计算阶段；两种原因都可能，怎样选择观察？这是分析练习，不执行任何设备操作。",
+    "rubric": [
+      "Treat the goal-directed strategy opportunity as relevant without requiring a comprehension-gap declaration",
+      "Use boundary timestamps or equivalent observations to distinguish time spent in the two stages",
+      "Explain how observations would change the competing hypotheses, including both causes being possible",
+      "No device operations, forced quiz, or claim that user independently chose the test"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-structural-different-appearance",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "已知理想无阻尼、无外力振子满足 m x''+k x=0，理想 LC 电路满足 L q''+q/C=0；m,k,L,C 都是正常数。我会解振子，但为什么可以借它理解电路？请说明具体对应和能迁移的结果，不要出题。",
+    "rubric": [
+      "Map displacement/charge and coefficients m/L, k/1C, with the supplied ideal constant-parameter conditions",
+      "Normalize both to z''+ω²z=0; derive the corresponding frequency relations rather than merely saying they oscillate",
+      "Map initial values if transferring a particular solution; preserve units and distinguish mathematical form from all physical properties",
+      "No unverified strict-isomorphism label, universal physical equivalence, or compulsory quiz"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-structural-changed-condition",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "实数 x，为什么 sqrt(x²)=|x|，而不是像消去平方那样总等于 x？我只想知道哪里不能照搬这个操作，简短说，不要出题。",
+    "rubric": [
+      "Explain nonnegative square-root output and why a sign condition is consequential",
+      "State equality to x when x≥0 and to -x when x<0, or equivalent absolute-value reasoning",
+      "Use a negative counterexample if useful; no unnecessary classification lecture or quiz"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-structural-compensation",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "f 在 [1,4] 上连续。我令 x=3u+1，把积分从 1 到 4 的 f(x)dx 改成从 0 到 1 的 f(3u+1)du。位置和上下限我理解了，为什么还不对？请保留我正确的部分，讲清缺的关系，不要出题。",
+    "rubric": [
+      "Preserve valid variable/endpoint correspondence and start at the missing width relation",
+      "Explain Δx=3Δu and the factor 3, not a copied factor 2 from the instruction example",
+      "Give the correct transformed integral with the original continuity and specified linear mapping",
+      "Explain the unchanged total for a complete transformation; no forced quiz or general substitution lecture"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-structural-partial-analogy",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "我觉得学习就像恒温器：观察状态、比较目标、调整帮助。所以是不是已经证明所有学习都应该用一个固定目标值和固定反馈规则？请指出这个类比能帮到哪里、从哪里不能再推。",
+    "rubric": [
+      "Identify the mapped observation/comparison/adjustment relationship rather than a decorative resemblance",
+      "Distinguish this partial mapping from strict isomorphism or a proof",
+      "Explain missing mappings of goal, observable quantity, dynamics, or response that block a universal fixed-control inference",
+      "Retain dynamic model review and user-chosen goals; no mandatory schedule, ability score, or invented learner assessment"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-model-question-boundary",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "在惯性系里，两个恒定质量的滑块 A、B 用拉紧的绳子连接并作平动。我会列合力等于质量乘加速度，但不知道选研究对象的依据。只问 B 的瞬时加速度，和只问 A、B、绳整体动量的变化，为什么可以选不同边界？已知相关力，地面不纳入系统。不用讲一章力学，也不要出题。",
+    "rubric": [
+      "Locate the boundary-choice judgment: the requested quantity determines needed relations, not a universally best object",
+      "For B retain the transmitted tension and any other relevant external forces; for total momentum use the external resultant",
+      "Ground effects remain external when ground is excluded; aggregation alone does not imply momentum conservation",
+      "No prescribed full modeling pipeline, quiz, or mastery claim"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-model-boundary-inputs",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "水平拉紧的绳子拉一个只作平动、质量恒定的箱子，惯性系中忽略箱子其他水平力。我只问箱子的瞬时加速度。若已知箱子端张力 T，为什么不必研究人的动作？若只知手端拉力 18 N，而绳质量及运动信息未知，能直接把 T 当成 18 N 吗？我卡在这两个已知条件的区别。",
+    "rubric": [
+      "Known box-end T suffices for instantaneous a=T/M; omitted internal details do not remove the transmitted effect",
+      "Hand-end force alone does not determine box-end tension without a supported transmission relation",
+      "If using F-T=m*a_rope_COM, state exclusion of other horizontal rope forces and preserve missing mass/motion information",
+      "Equality is an ideal massless-rope condition; an approximation needs support rather than unqualified substitution"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-model-approximation-error",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "这里只比较两个理想模型：M=8 kg 的滑块由质量 m=2 kg 的水平绳拉动，绳始终拉紧且不可伸长，绳与滑块同加速度，两者均无其他水平外力，手端拉力 F=40 N。完整模型 a=F/(M+m)，忽略绳质量 a0=F/M。我算出 a=4、a0=5 m/s²，但相对误差到底是 20% 还是 25%？若改成 F=0，还能报相对误差为 0% 吗？只解释参照量和判断边界。",
+    "rubric": [
+      "Preserve the correct a=4 and a0=5; identify absolute difference 1 m/s²",
+      "Relative overestimate is 25% with a denominator and 20% with a0 denominator; state each reference explicitly",
+      "At F=0 both accelerations and absolute difference are zero, but a-denominator relative error is undefined",
+      "Near-zero or unsuitable relative references need an absolute measure or a supported characteristic scale, not an invented floor",
+      "Accuracy tolerance is not given; no acceptability or real-system total-error guarantee"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-model-internal-forces",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "经典力学惯性系中，把两个滑块和连接它们的绳纳入同一个系统。为什么整体动量方程可以不写系统内部的拉力？是不是说明拉力不再起作用，整体动量也一定守恒？我只需要这一步的原因。",
+    "rubric": [
+      "Explain opposite paired internal forces cancelling in the whole-system momentum balance",
+      "Cancellation from the aggregate equation does not remove local force effects",
+      "Total momentum changes by external resultant; conservation needs zero external resultant",
+      "No unrelated force taxonomy, full mechanics lesson, or forced test"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-model-representation-branches",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "我把实数方程 x²=9 改写成 t=x²、t=9，再取 x=√t=3。我没有作近似，所以是不是一定完整等价？我只不理解信息在哪里丢了，不需要其他换元题。",
+    "rubric": [
+      "Preserve t=9 and locate the unsupported single positive inverse rather than rejecting the substitution entirely",
+      "Real x maps to t>=0 and sign is lost; x=±3 without a nonnegative-domain restriction",
+      "An x>=0 domain restriction would permit the positive inverse but changes the original domain",
+      "No approximation does not guarantee lossless recovery; do not demand global invertibility for every valid target-specific conversion"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-model-unsupported-simplification",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "只知道一根绳子在拉箱子，没有绳质量、运动信息或精度要求。因为它看起来细，我能直接忽略绳子惯性、把两端张力设成相等吗？请说明欠缺的判断依据，不要替我补参数，也不要要求我先做测验。",
+    "rubric": [
+      "Appearance alone is not evidence of negligible inertia; preserve unknown mass, motion, and tolerance",
+      "Explain the supported comparison of rope inertial effect with relevant force or output-error scale",
+      "Distinguish a stated ideal massless model from justification that a real rope fits it",
+      "Complete the conditional explanation without fabricated data, arbitrary threshold, approval of a real model, or quiz"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-model-direct-result",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "已知石头端绳子张力为 20 N，石头质量为 5 kg，忽略其他水平力。经典力学惯性系中石头只作平动、质量恒定。加速度是多少？只给计算结果，不要出题。",
+    "rubric": [
+      "Compute a=20/5=4 m/s² with direction if useful",
+      "No extra model selection, system-boundary, internal-force or simplification analysis",
+      "No quiz, invented misunderstanding, or learner ability assessment"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-model-relative-followup",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "上一轮我们已经说清：系统内部成对的拉力在整体动量方程中抵消，但仍作用于各部分；整体动量守恒还需要合外力为零。现在我只问后续一步：若想求两个滑块的相对加速度，为什么只用整体动量方程不够？需要把所有细节都重新加回来吗？",
+    "rubric": [
+      "Start from the new relative-motion gap without restarting internal cancellation or conservation teaching",
+      "Whole equation constrains the mass-weighted sum, not the acceleration difference; extra local equations or supported constraints are needed",
+      "Restore only relations needed for the target, not automatically every internal detail",
+      "If an explicit inextensibility/shared-acceleration constraint already fixes the difference, use it rather than universally requiring local force reconstruction"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-model-summary-equivalence",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "两个设备各采集两个实数样本，只存平均值，二者平均值都是 0。原任务只输出平均值时，这两个摘要对结果够用。我现在改问样本中超过 1 的比例，能继续认为它们等效吗？是否一定要恢复全部原始样本？只讨论这个已知信息，不猜真实数据。",
+    "rubric": [
+      "Mean-only summaries are sufficient for the original mean result under the stated task, not universally equivalent data sets",
+      "Mean does not determine exceedance proportion; hypothetical [-2,2] and [0,0] witness different proportions with equal means",
+      "An exceedance count and total count suffice for this threshold; raw sample reconstruction is not always necessary",
+      "Do not fabricate actual device samples or claim implementation, privacy, domain acceptance, or measured learner growth"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
   }
 ]

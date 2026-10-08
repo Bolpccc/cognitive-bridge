@@ -1,5 +1,26 @@
 # Changelog
 
+## [2.2.0] - 2026-10-08
+
+- Explain model choice and simplification only when they resolve the current comprehension gap: connect the question to relevant objects, boundaries, relationships, and required fidelity without a fixed modeling process.
+- Distinguish exact representation changes, task-specific equivalence, and conditional approximations; check domains and recoverability, retain relevant boundary effects, and justify simplification using supported conditions, scales, or error estimates.
+- Add an optional person–rope–stone modeling contrast, seven modeling acceptance categories, a sequential boundary follow-up, non-mechanics fixtures, and a direct-calculation negative case. Preserve existing evaluation fixtures and evidence ceilings.
+- Preserve domain ownership, invocation scope, request fields, permissions, and dynamic personal-model maintenance. Local package upgrade only; no commit, tag, push, publication, or learner capability claim.
+
+## [2.1.0] - 2026-10-05
+
+- Add selective structural explanation support: relevant objects, relations, operations, conditions, correspondences, and justified transfer boundaries without a fixed sequence or output template.
+- Explain transformations through the target, changed representation, necessary compensation, and preserved relation or quantity; distinguish exact preservation from approximation and partial analogy from verified isomorphism.
+- Add a continuous-function linear substitution contrast and four structural acceptance/evaluation cases. Retain existing integrating-factor and interface fixtures as held-out cases.
+- Preserve v2.0.0 invocation scope, request fields, permissions, dynamic review, and personal-model evidence boundaries. This is a local package upgrade, not a publication claim.
+
+## [2.0.0] - 2026-10-04
+
+- Expand selective invocation to useful thinking-development opportunities in learning, reasoning, and solution discussions, preserving local explanations and complete requested answers.
+- Add an open, evidence-based personal thinking model with goal-directed assistance and dynamic review; no turn counter, fixed review interval, ability ranking, or automatic mastery claim.
+- Permit explicitly authorized personal-model persistence while keeping domain facts, decisions, safety, and formal learner records with their owners. Add optional development_goal, thinking_model, and model_path inputs without requiring old callers to change.
+- Add dynamic-review and persistence-fallback acceptance scenarios. Private models and original conversations stay outside the shared package. This version is a local package update; no publication is implied.
+
 ## [1.6.0] - 2026-09-29
 
 - Explain both step validity and usefulness: expose the obstacle, object mapping, changed quantity, and remaining difficulty in unfamiliar derivations.

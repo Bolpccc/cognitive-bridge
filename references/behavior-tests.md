@@ -67,10 +67,11 @@ case; otherwise end without manufacturing a quiz.
 
 ## 11. Selective invocation
 
-A routine status report or a direct factual answer with no specific comprehension
-gap should not trigger this Skill merely because it involves engineering or math.
-An explicit user or upstream request still invokes it. A demonstrated conceptual
-gap should receive a useful bridge without requiring a formal request packet.
+A routine status report or direct factual answer should not trigger this Skill
+merely because it involves engineering or math. An explicit request, demonstrated
+comprehension gap, or relevant opportunity to develop a thinking strategy toward
+the user's goal can invoke it. No formal request packet is required; a useful
+development task does not require the user to first declare confusion.
 
 ## 12. Proportional explanation
 
@@ -238,3 +239,158 @@ Motivate a new idea with a real obstacle, not an invented misconception. A usefu
 summary or adjacent application is allowed; unrelated lessons are not. Keep
 clear existing wording and all evidence limits. These checks supplement cases
 14–17 and 26–30 rather than prescribing a teaching itinerary.
+
+## 35. Consequential correction without a waiting period
+
+A model says the user needs concrete examples to identify a relevant condition.
+In a new unprompted task the user explicitly identifies that condition and
+explains why an alternative method is invalid. Consider narrowing the old
+judgment now and reduce redundant scaffolding for that action. No exchange count
+or scheduled review is needed; broader transfer is still unknown.
+
+## 36. Repeated chat and repeated evidence do not imply growth
+
+Several exchanges contain no new task performance, or cite the same prompted
+success again. Keep the pertinent judgment unchanged when no new evidence
+supports revision. Do not raise confidence, create a capability score, or rewrite
+the model merely because more exchanges occurred.
+
+## 37. Goal changes alter the relevant development
+
+The user shifts from memorizing procedures to independently choosing a method.
+Update the declared goal and proposed assistance as warranted, while retaining
+valid prior evidence with its original scope. The changed goal is not evidence
+of improved ability and does not require a fixed training sequence.
+
+## 38. Reconsider ineffective assistance and mistaken judgments
+
+The user says "I understand the symbols; I need to know why this method was
+chosen" after repeated symbol explanations. Repair the method-choice connection
+and retract an unsupported symbol-knowledge assumption. Record this as correcting
+the assistance or AI model, not proof that the user newly learned the symbols.
+
+## 39. Authorized continuity and private model boundaries
+
+An authorized model file carries a prior observation into a later conversation.
+Read it, then use current performance to retain, narrow, or replace it. Before
+saving, reread and merge user edits, preserve unrelated observations, and read
+back the result. A supplied path alone grants no permission to write. Personal
+records never become shared Skill rules or publicly committed fixtures.
+
+## 40. Persistence failure does not block the answer
+
+The model is missing or a save fails. Complete the requested explanation from
+available context, briefly identify a material storage limitation, and distinguish
+a proposed revision from a saved change. Do not change permissions, invent a new
+storage location, or repeatedly retry. Do not claim guaranteed automatic loading
+in other conversations merely because this test can read a file.
+
+## 41. Separate user capability from joint output
+
+A prompted solution is correct but a new independent task is unresolved. Record
+the prompted result at its actual evidence level; do not infer independent skill,
+general intelligence, or mastery. If independent use is later demonstrated,
+reduce support for the demonstrated action while keeping unknown aspects open.
+
+## 42. Open model, no diagnosis, and preserved complete answers
+
+When the user asks to correct, remove, or stop a model judgment, honor that scope
+without secretly retaining the rejected label. No ability judgment is derived
+from ambition, tone, or preferred format. A user requesting the full answer and
+no quiz still receives it; development support is not a compelled exercise.
+
+## 43. Different appearance, verified relational correspondence
+
+Given ideal constant-parameter equations m x''+k x=0 and L q''+q/C=0,
+with all parameters positive, explain the corresponding variables and coefficients,
+the common normalized oscillator equation, and how solution form or frequency
+can transfer. Preserve damping/forcing exclusions and map initial conditions when
+transferring a particular solution. Similar form does not transfer every physical
+property or establish that arbitrary circuits and mechanical systems are identical.
+
+## 44. Similar appearance, changed applicability
+
+Compare sqrt(x²)=|x| with the claim sqrt(x²)=x for real x. Explain how the sign
+condition changes the result and give a negative-value contrast when useful.
+Recognize the relation to magnitude rather than transferring an unsupported
+cancellation rule or starting an unrelated taxonomy. A short no-quiz request
+retains the necessary sign condition.
+
+## 45. A representation change needs compensation
+
+For continuous f on [1,4], a learner substitutes x=3u+1 but writes
+the integral of f(3u+1) over [0,1] without a factor 3. Preserve the valid position
+and endpoint mappings, explain the width change and resulting factor, and show
+what complete transformation preserves. The conditions differ from the teaching
+example, so blindly copying its factor 2 fails. Do not append a quiz.
+
+## 46. Partial analogy has a boundary
+
+A user compares learning feedback with a thermostat and asks whether this proves
+all learning can use one fixed setpoint/control rule. Identify the supported
+observation-comparison-adjustment relation and where the analogy lacks an
+established mapping of goals, measured variables, dynamics, and effects. Do not
+claim strict isomorphism, a proven universal teaching law, or a fixed model-review
+schedule. A narrow gap needs only its decisive boundary.
+
+## 47. One situation, different target and boundary
+
+For two coupled translating bodies, distinguish asking for one body's acceleration
+from asking for total momentum change. Explain only how the target changes the
+needed boundary and information; retain transmitted force for a local question
+and external resultant for the whole. Do not treat either boundary as universally
+best or infer conservation merely from aggregation.
+
+## 48. Known boundary effect versus unknown transmission
+
+If stone-end tension and other relevant horizontal forces are given, its
+instantaneous acceleration need not require reconstructing the puller's actions.
+If only the hand-end force is given, do not silently equate it to stone-end
+tension. Explain the missing transmission relation and supported conditions for
+neglecting rope inertia. Task-specific equivalence retains relevant effects and
+specified results, not every internal property or a strict isomorphism.
+
+## 49. Approximation error has a reference and scope
+
+With explicit taut, inextensible, shared-acceleration and no-other-horizontal-force
+conditions, compare F/(M+m) with F/M. Use the actual case's masses, state the
+denominator for relative error, and keep physical-model error separate from this
+two-model comparison. For zero or an unsuitable near-zero reference, use absolute
+error or a supported task scale, not an invented universal denominator floor.
+No declared accuracy tolerance means acceptability remains undecided.
+
+## 50. Internal cancellation and a local follow-up
+
+When asked why internal forces disappear from a whole-system momentum equation,
+explain paired internal-force cancellation and the remaining external resultant.
+Local motion still depends on those forces; conservation additionally requires
+zero external resultant. On a later question about relative motion, start from
+that remaining need and explain the extra local relation or constraint rather
+than repeating an entire mechanics lesson. Overall and local models can coexist.
+
+## 51. Exact conversion does not imply full recoverability
+
+For real x and t=x², identify the nonnegative t domain and lost sign information.
+Retain both branches when recovering x, or state a domain restriction that makes
+the mapping invertible. For an integral or another target, check that target's
+conditions instead of demanding every valid transformation be globally bijective.
+Do not conflate a many-to-one map, a supported exact reformulation, and a physical
+approximation, or declare an unqualified x=√t for all real x.
+
+## 52. Insufficient simplification evidence stays unknown
+
+Given no rope mass, acceleration scale, or accuracy requirement, do not assert
+that its inertia is negligible. Identify the missing comparison and complete the
+conditional explanation. In a non-mechanics case, distinguish a summary sufficient
+for a mean from one sufficient for exceedance counts or other changed results.
+Do not invent statistics, supported guarantees, or domain acceptance; choose the
+extra information needed for the new question without always restoring every detail.
+
+## 53. Modeling support is selective, not a new lecture
+
+Asked only for acceleration with stone-end tension 20 N, stone mass 5 kg, and no
+other horizontal force, answer a=20/5=4 m/s² directly. Do not append system-boundary
+analysis, ask a quiz, or infer a comprehension gap from mathematics alone.
+An already specified model and conditions need no additional modeling explanation.
+For the new positive cases too, judge the missing decision and sufficient support,
+not completion of a modeling checklist, word count, or terminology.

@@ -1,16 +1,17 @@
 # Cognitive Bridge
 
-`cognitive-bridge` is a public Agent Skill for turning domain-bounded content into
-an explanation that helps a person form a faithful, usable mental model with less
-avoidable cognitive work.
+`cognitive-bridge` is a public Agent Skill for bridging comprehension gaps and
+developing thinking strategies toward a user's chosen goals. It connects useful
+explanations, a concise revisable thinking model, and subsequent performance that
+can change both the model and the assistance.
 
 It is not a general prose humanizer and does not replace domain expertise. The
 source owner still controls facts, formal conditions, evidence, safety,
-persistence, and decisions.
-The Skill chooses the cognitive entry point, representation, span, and final
-compression.
+domain persistence, and decisions. The Skill may maintain a personal thinking
+model only within the user's authorization; formal learning records and mastery
+judgments remain with their domain owners.
 
-Current release: `v1.6.0`. See [VERSIONING.md](VERSIONING.md) for the SemVer
+Local package version: `v2.2.0` (not a publication claim). See [VERSIONING.md](VERSIONING.md) for the SemVer
 contract and [CHANGELOG.md](CHANGELOG.md) for release history.
 
 ## Install
@@ -26,6 +27,41 @@ git clone https://github.com/Bolpccc/cognitive-bridge.git \
 Use $cognitive-bridge to explain this from what I already understand while
 preserving every condition and evidence boundary.
 ```
+
+Use it selectively in learning, reasoning, and solution discussions when it can
+help with a comprehension gap or a thinking strategy relevant to the current
+goal. Routine operations and status reports remain direct answers. Existing
+request fields remain valid; optional `development_goal`, `thinking_model`, and
+`model_path` carry a goal, model content, or location without granting permission
+to write by themselves.
+
+For a structural gap, the explanation can expose relevant object/relationship
+correspondences, why a transformation preserves the target, its required
+compensation, and where a method or analogy stops applying. The
+[structural explanation contrast](references/structural-explanation.md) uses a
+continuous-function linear substitution; it is optional support, not a fixed
+teaching sequence. Resemblance, partial correspondence, and a verified isomorphism
+remain distinct. Existing invocation scope, inputs, and ownership remain unchanged.
+
+When the missing judgment concerns choosing or simplifying a model, explain why
+the question needs certain relationships and why other details can be omitted
+or must be restored. Task-specific equivalence preserves specified results under
+specified conditions; exact representation changes still require domain and
+recoverability checks. The optional [model-selection contrast](references/model-selection.md)
+uses a person, rope, and stone to expose these choices and supported approximation
+errors. It is explanation support, not authority to replace domain methods,
+calculations, or validation. An already specified model and a local calculation
+do not require an added modeling explanation.
+
+For continuity, provide a model or add its authorized local location and write
+scope to your active workspace instructions. On relevant calls, the Skill reads
+that model, adapts assistance, and reviews consequential judgments when new
+evidence or goals warrant it. There is no fixed exchange count or review period.
+Private model records stay outside this repository and the installed package.
+An unavailable model never blocks the requested explanation. See the
+[thinking-model guidance](references/thinking-model.md) for evidence and saving.
+This is an agent instruction workflow, not a background listener or guaranteed
+activation in chats that do not load the Skill and model.
 
 MIT License. See [LICENSE](LICENSE).
 
@@ -129,3 +165,12 @@ comparison and does not supply learner-understanding evidence.
 
 The [v1.6.0 comparison record](evals/results/v1.6.0.md) includes actual outputs,
 ties, partial explanations, and evaluation limitations.
+The [v2.0.0 local validation record](evals/results/v2.0.0.md) separates package
+checks, synthetic file checks, and author walkthroughs from unmeasured automatic
+activation and learner outcomes.
+The [v2.1.0 author walkthroughs](evals/results/v2.1.0.md) record structural-case
+outputs and existing method/contract regressions, with no independent-run or
+learner-effect claim.
+The [v2.2.0 author walkthroughs](evals/results/v2.2.0.md) assess the missing
+modeling judgment, proportionate support, conversion conditions, and the direct
+calculation negative case. They retain the same evaluation limits.
