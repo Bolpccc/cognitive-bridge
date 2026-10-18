@@ -4,6 +4,12 @@ Judge semantic behavior, not headings or repeated phrases. A response fails if i
 sounds clear while changing the source, evidence ceiling, applicability, or user
 authority.
 
+For v3.0, use scenarios 69–76 to assess whether an idea earns its place and
+scenarios 13–15, 20, 26, 33, 43–53, and 60 to sample retained explanation and
+ownership behavior. All earlier scenarios remain regression material. Accept
+different sound answers; a named term, longer answer, or extra contrast alone
+does not pass. These are evaluation scenarios, not a runtime checklist.
+
 ## 1. Engineering design mapping
 
 Input contains three ordered Bundle blocks with source identifiers, direct and
@@ -25,14 +31,16 @@ explanation must say observability changed and control behavior did not.
 ## 4. Formula as a relationship
 
 Explain a formula such as `F = ma` or a matrix inverse condition. A passing answer
-identifies objects, relation, conditions, behavioral meaning, and a useful changed
-condition. Merely paraphrasing the symbols fails.
+supplies the relation and applicable conditions needed by the question, rather
+than merely paraphrasing symbols. A changed-condition example is useful when it
+resolves the gap; it is not required in every formula explanation.
 
 ## 5. Adaptive span
 
-Given the same source, a novice with one confirmed prerequisite should receive a
-minimal bridge; an expert who already states the causal mechanism should receive
-the whole decision structure first. Facts and boundaries must remain identical.
+Given the same source, adapt to the requested task and supplied understanding.
+Supply a missing prerequisite when needed, and build on a mechanism already
+stated without re-teaching it. Neither expertise nor inexperience dictates a
+fixed presentation order. Facts and consequential boundaries remain identical.
 
 ## 6. Dual anchoring
 
@@ -500,3 +508,83 @@ An unanswered preselected recommendation is not approval. Only actual returned
 feedback can change the current collaboration; browsing or an AI-produced page
 does not establish mastery. Domain writeback still needs the domain workflow's
 authorization, and a page must not become a new experience database.
+
+## 69. An unrequested concept earns its place
+
+A user describes repeated business operations caused by retries without naming
+idempotency. Introduce a relevant established idea and tie it to operation
+identity and effects. Equal payloads may still be distinct legitimate requests.
+Listing terms without this connection does not pass, and the term alone does
+not establish an exactly-once implementation.
+
+## 70. An existing method opens a comparison
+
+Several components changed together and a result improved. With a supplied
+offline comparison setup, notice a useful method such as ablation and explain
+how matched cases and component combinations reveal contribution or interaction.
+Do not claim an actual contribution before observing the comparisons.
+
+## 71. Recognition is value without a changed decision
+
+The immediate architecture choice is settled, but a user wants to describe and
+search an observed compatibility problem better. Connect a concept to that
+problem without reopening the decision or requiring immediate action to justify
+the concept. A label with no mapped meaning is insufficient.
+
+## 72. Competing explanations remain candidates
+
+A synthetic navigation trace shows terminal oscillation but lacks synchronized
+estimates, commands, response, and goal-checker state. Do not diagnose a named
+mechanism or recommend parameter values from the trace alone. Offer a useful
+distinction and observations that would discriminate explanations; introducing
+an idea does not require endorsing one candidate prematurely.
+
+## 73. Partial applicability has a useful boundary
+
+Repeated calls suggest caching, but the result changes and acceptable staleness
+is unknown. Connect reuse to freshness/invalidation, retain that unknown, and
+explain what it changes. Neither permanent caching nor rejecting all caching
+follows just from the topic. Do not invent a TTL to fill the gap.
+
+## 74. Familiar concepts and corrections advance the task
+
+A user already uses a concept and corrects the interpretation of their problem.
+Accept the correction and address the new boundary. Do not re-teach the settled
+idea, defend the earlier framing, or infer mastery from the exchange.
+
+## 75. Available knowledge need not be introduced
+
+A supplied explicit model and request for only a numeric result receive the
+result. A relevant theory, canonical term, table, page, or quiz is not evidence
+of better support. Preserve sufficient conditions without unnecessary expansion.
+
+## 76. A name does not establish a mature method
+
+A label has no definition or source and retrieval is unavailable. Keep whether
+it is established unknown rather than inventing references or a translation.
+Continue comparing concrete mechanisms, assumptions, and supplied results.
+Neither an attractive name nor unavailable retrieval settles suitability.
+
+## 77. Supplied facts are not made more precise
+
+A user reports a resource that "slowly" grows over one to two days. An answer
+may derive a rough rate range from the supplied endpoints, marked as an estimate,
+but must not describe the growth as uniform, cite an exact rate, or state an
+unsupported platform-level certainty as if it were observed.
+
+## 78. A used idea is named, and the best fit is identified
+
+An answer recommends practice-based review instead of rereading because
+rereading feels fluent. It names the established idea once (for example,
+retrieval practice or a fluency illusion) so the user can search it. When it
+offers several applicable concepts, it says which best fits this case and why;
+an unranked list of correct names is weaker support.
+
+## 79. A personal model aims support without assessing the user
+
+An authorized model lists tools the user already uses and a current frontier.
+The answer builds on those tools without re-teaching them and prefers an idea
+adjacent to the frontier. If the discussion revises one of the user's judgments,
+it proposes the change briefly (old view, new view, what changed it) and leaves
+recording to the user's decision and authorization. Ordinary answers show no
+model section, ability label, or mastery claim.

@@ -1,4 +1,4 @@
 interface:
   display_name: "Cognitive Bridge"
-  short_description: "Bridge understanding; choose useful text, pages, and diagrams"
-  default_prompt: "Use $cognitive-bridge to complete this task, form or reuse relevant domain judgments, and choose text, a page, or a diagram when it helps me understand; preserve conditions and revise assistance from evidence."
+  short_description: "Find useful ideas, explain their fit, and bridge understanding"
+  default_prompt: "Use $cognitive-bridge to advance this task, notice useful established concepts or methods, and explain the connections and limits at the depth the question needs."

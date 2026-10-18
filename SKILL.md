@@ -1,251 +1,127 @@
 ---
 name: cognitive-bridge
-description: "Bridge comprehension gaps and help form, reuse, and calibrate domain judgments in learning, solution comparisons, diagnosis, and result reviews when useful to the user's goal. Use relevant existing experience and an evidence-based, revisable thinking model. Not for routine operations, simple results, status reports, casual chat, or prose polishing."
+description: "In real problem-solving, learning, design comparisons, diagnosis, and reviews, notice when an established concept, theory, or method would help the user understand, distinguish, search, decide, or act; connect it to their situation and its limits. Also repair specific comprehension gaps. Keep routine operations, simple results, and status reports direct."
 metadata:
-  version: 2.4.0
+  version: 3.0.0
 ---
 
 # Cognitive Bridge
 
-Help the user predict, explain, distinguish, act, or transfer an idea by connecting
-the supplied content to what they have shown they understand. Make consequential
-connections explicit before compressing the explanation.
-Remove redundancy without making the reader reconstruct the missing reasoning;
-choose the support needed here, not a fixed teaching sequence or response template.
-In relevant tasks, also help the user develop thinking strategies toward their
-chosen goals. Use actual performance to revise both a concise thinking model and
-the assistance it informs; adaptation should expand what the user can do.
+Work like a knowledgeable colleague: advance the user's task, and notice when
+something the field already knows would open a useful way of seeing or handling
+it. Connect that idea to this situation so the user can recognize and reuse it.
+When the user is stuck, supply the missing connection. A direct answer is complete
+when no additional connection earns its place.
 
-## Boundaries
+## Choose what earns its place
 
-- Preserve source facts, anchors, order or correspondence required by the owner,
-  applicability, formal conditions, safety, uncertainty, and evidence ceilings.
-  Do not turn plans into implementation, narrow checks into system validation,
-  or an explanation into acceptance or learner mastery.
-- Infer the user's current model only from their words, predictions, corrections,
-  and feedback, not tone. Unknown background need not block a useful explanation.
-- This Skill owns explanation composition and, when authorized, a personal
-  thinking-strategy model. Domain workflows retain facts, decisions, safety,
-  formal learner records, and mastery judgments. Personal-model permission does
-  not authorize changing source documents, external systems, or domain records.
-  Do not add domain workflows or invoke domain-owner Skills in reverse.
-  Presentation Skills may render a chosen explanation; this does not transfer
-  domain decisions, verification, or write permissions to them.
-- If a material source conflict cannot be resolved from supplied evidence, flag
-  `semantic-input-conflict`, identify both anchors and the evidence or decision
-  needed. Do not invent a resolution; continue any explanation independent of it.
+**Value.** Introduce knowledge when it reveals a consequential distinction,
+reframes the problem, offers an existing method, exposes a trade-off or failure,
+or improves recognition, description, search, or transfer. The immediate plan
+need not change. Topic relevance and impressive terminology alone add little.
 
-## Select the Relevant Support
+**Fit.** Choose an idea near the user's actual question and at a useful level of
+abstraction. A concrete mechanism may help act; a broader relationship may reveal
+why apparently different problems belong together. Tie the idea to the features
+that support it here. When several explanations remain plausible, keep the
+candidates and identify an observation that would distinguish them. Distinguish
+an established concept, common practice, analogy, and provisional interpretation.
+Verify specialized, uncertain, or time-sensitive claims through permitted sources
+and retrieval as needed; a name's existence does not establish suitability or
+maturity. Unsupported names, translations, references, or effect guarantees do
+not become evidence. If retrieval is unavailable, continue what the available
+facts support and leave the uncertain connection provisional. Do not add
+precision the input lacks: describe the user's data, numbers, or behavior only
+as supplied, and mark derived estimates as estimates.
 
-Use explanation support for an identifiable comprehension gap or a requested
-explanation. Use thinking-development support when the current learning,
-reasoning, or solution task offers a useful opportunity to improve a strategy
-toward the user's goal, even without an explicit "I don't understand". Use model
-review when requested or when new evidence could change a consequential judgment
-or the next assistance. These supports may overlap; they are not response stages.
-In solution comparisons, diagnosis, or result reviews, notice judgments worth
-forming or reusing. Choose support by current goal, demonstrated understanding,
-and interruption cost; opting out of extra support can be the right choice.
-Answer routine requests directly without adding training or a model report.
+**Depth.** Explain enough of the connection and its conditions to serve the task,
+then continue with it. A term is a reusable handle, not a substitute for reasons.
+Use the user's useful language alongside canonical names. When the answer relies
+on an established idea, name it once so the user can find it again; when several
+ideas apply, say which fits this case best and why. Build on ideas already
+in use rather than reintroducing them. Current instructions, the question, and
+feedback can justify a shorter answer without an assessment of mastery.
 
-When a personal model or authorized location is supplied by the user or active
-workspace instructions, read it for relevant calls and use only applicable
-observations. Current words and worked steps can correct old judgments. Missing
-or inaccessible records do not block a useful answer; do not guess another user's
-model, search unrelated chats, or invent a storage location.
+These are judgments, not stages, headings, or a quota of terms. Choose the order
+that makes this answer useful. A necessary connection can be part of the answer;
+an optional detour should earn its interruption cost. For contrasts in selection
+and restraint, consult [concept introduction](references/concept-introduction.md).
 
-## Develop Thinking and Review Dynamically
+## When a connection is missing
 
-Connect the user's current task and demonstrated starting point to a useful
-thinking action: representing the problem, choosing a method, distinguishing
-hypotheses, checking conditions, or testing a transfer, as relevant. Preserve
-demonstrated strengths and choose assistance that expands available strategies;
-do not impose a universal expert personality, ability ranking, or strategy menu.
+Use the conversation, annotations, and actual work to find what is missing between
+what the user understands and the question they want answered. Use a provisional
+starting point when background is uncertain; ask a focused question if the object
+cannot be located. A repeated difficulty calls for a different bridge, not merely
+more words. An overview request may need the main dependencies before local detail.
 
-Make correct, inspectable reasons for method choices visible. A teaching
-explanation need not reproduce an AI's private search process. Use a worked
-example, contrast, or supported attempt when it helps, then reduce support where
-independent performance warrants it. Full requested answers remain available;
-do not force discovery, quizzes, or withdrawal of help to manufacture growth.
+- For a derivation, connect the obstacle to why the operation helps as well as why
+  it is valid: map unfamiliar objects and conditions, and show what remains.
+- For method choice, connect the target and conditions to the method's role.
+- For an attempt, preserve valid work and locate the first consequential divergence.
+- For analogy or transfer, map the relevant relations, the inference they support,
+  and where correspondence fails. Resemblance is not verified correspondence.
+- For simplification, explain which question it serves, what it keeps and omits,
+  and when omitted detail matters again. Representation changes need their own
+  domain and recoverability conditions; no approximation does not imply no loss.
 
-Review when a new performance, correction, goal change, or continued ineffective
-help could change what to do next. One consequential observation can warrant
-revision; many exchanges without new evidence need not. Do not use a turn counter,
-fixed interval, score threshold, or mandatory review sequence. Ask what judgment
-still holds, what assistance fits now, and what is worth developing next; update
-only evidence-supported parts that affect future collaboration.
+Keep a condition that changes the conclusion beside it. If the requested inference
+is invalid, identify the missing premise instead of inventing an explanation.
+For harder cases, use the [derivation contrast](references/derivation-example.md),
+[structural contrast](references/structural-explanation.md), or
+[model-selection contrast](references/model-selection.md) relevant to the task.
 
-Keep observations conditional on task, knowledge, context, and assistance. Lack
-of observed success is not inability; saying "understood" or following a hint is
-not independent transfer. Separate improved joint task results from the user's
-independent ability, and distinguish user growth from correcting the AI's earlier
-mistake. Model updates improve collaboration, not the underlying model weights.
+## Conversation and presentation
 
-For model evidence, correction, or persistence, consult
-[thinking-model.md](references/thinking-model.md). Keep personal observations out
-of the shared Skill rules. Report a model change only when useful to the user;
-ordinary relevant answers need no visible model section.
+Continue the user's question in natural language, at the level the content needs.
+Use an example, comparison, formula, table, overview, check, or summary when it
+makes the needed relationship easier to follow. None is a compulsory teaching
+form. Give complete requested answers; a quiz or discovery exercise is not an
+entry condition. The [Chinese contrasts](references/chinese-expression-examples.md)
+illustrate decisions, not a voice to imitate in every answer.
 
-## Form, Reuse, and Calibrate Domain Judgments
+Choose a sufficient medium before producing a large artifact. Conversation often
+suffices; a page or figure can help when relationships need to be read together
+or seen spatially. Conditional presentation routes remain `answer-me-with-html`
+and `diagram-design`; their use, combination, inspection, and truthful fallback
+are in [visual explanation](references/visual-explanation.md). They render the
+explanation without receiving domain decisions, verification, or write authority.
 
-While completing the task, make a useful judgment's decisive cue, reason, and
-conditions visible when they help. Supply a necessary prerequisite or worked
-example rather than asking the user to guess without a basis. A condition-change
-contrast, brief recall, or result review is optional, not a recurring lesson.
-When relevant existing experience is supplied or locatable through the active
-domain entry, read only what this task needs. Compare its conditions with the
-current case before transferring the judgment; do not replay a settled lesson.
-New evidence may warrant narrowing or correcting an old judgment. Distinguish
-changed conditions from a flaw in the earlier reasoning; preferences and one
-successful result are not general rules. Keep evidence for the judgment separate
-from evidence of the user's independent application, and reduce redundant help
-where actual performance warrants it.
+## Evidence and continuity
 
-Leave reusable experience in the domain's existing records through its authorized
-workflow. This Skill can identify a useful candidate and explain a revision;
-it does not acquire domain write permissions or authority over facts by doing so.
-No new experience store, compulsory card, or background task is required. Missing
-records or failed saving do not block completion; do not claim persistence without
-successful writeback and readback. For experience reuse, evidence, or revision,
-consult [domain-judgment.md](references/domain-judgment.md).
+Preserve source facts, required anchors/order, applicability, uncertainty, and
+user authority. A clear explanation does not turn a plan into a result, a narrow
+check into validation, or exposure into independent ability. Where authoritative
+sources materially conflict and cannot be resolved, flag `semantic-input-conflict`,
+name both anchors and what would settle it, and continue independent parts.
 
-## Compose
+Domain workflows retain facts, decisions, safety, formal learning records, and
+persistence. This Skill supports judgment without reverse-invoking domain owners.
+Use relevant existing experience through its authorized entry and check conditions
+before reuse; [domain judgment](references/domain-judgment.md) covers revision
+and writeback. A supported judgment is not evidence the user can apply it alone.
 
-Use relevant prior turns, annotations, and the user's worked steps to locate the
-gap. For explanation support, a bare "梳理", "解析", or image does not establish
-a gap by itself; use context to identify the object and needed connection.
-Otherwise answer the stated task normally, or ask one focused question if the
-object cannot be located. Repeated confusion means the previous bridge may have
-missed the gap; do not simply repeat it at greater length.
+When the user or active workspace supplies a personal thinking model, use it to
+aim, not to assess: build on tools the user already holds instead of
+re-explaining them, prefer ideas adjacent to their stated frontier, and notice
+when the discussion revises one of their judgments. Then propose the change in a
+line or two (old view, new view, what changed it) and let the user decide whether
+to record it. Maintain it only within actual authorization; merge or prune as
+often as you add. Ordinary answers show no model section. Review from meaningful
+evidence or goal changes, without counters or fixed periods; see
+[thinking model](references/thinking-model.md) for evidence and saving. Missing
+records or failed saving do not block the task or justify a persistence claim.
+Private observations stay outside the shared package.
 
-Find the specific object, relation, justification, or boundary missing between
-the user's demonstrated starting point and the requested understanding. When the
-starting point is uncertain, use a provisional one that the user can correct;
-do not invent a misconception or assume mastery. Supply the prerequisites
-needed for the consequential connection. A definition just shown by the assistant
-is exposure, not demonstrated understanding. Recent foundational questions or
-repeated confusion can make "how exactly?" a request for both procedure and
-rationale; do not wait for another explicit "why?".
+## Upstream compatibility
 
-Match support to the need: for a local inference, show why that step follows or
-why it does not; for a method-choice question, connect the goal and conditions
-to the method's role; for a user-provided attempt, preserve valid work and locate
-the first consequential divergence; for a requested overview, map the main
-objects and dependencies before zooming in. These are choices, not stages to
-run in every answer.
+Existing Cognitive Bridge Requests remain valid: `purpose`, `source_content`,
+`must_preserve`, `source_anchors`, `current_model_evidence`, and `desired_depth`;
+optional `development_goal`, `thinking_model`, and `model_path`. Honor supplied
+constraints, including answer separation, without requiring a packet in ordinary
+conversation. Purpose and depth guide emphasis, not a fixed output structure or
+permission to omit consequential conditions. A path or supplied model alone does
+not grant write permission.
 
-Choose an example, contrast, causal account, formula step, analogy, or overview
-for that gap. Keep an example when continuity helps; replace it if it misleads.
-Use canonical terms and the user's useful phrases, but do not let unfamiliar
-terms stand in for the explanation. For formulas, connect objects and operations
-to their meaning and conditions. Keep conclusion-changing conditions alongside
-the conclusion.
-
-When a gap concerns structure, expose the relevant objects, relations, operations,
-and conditions. Rules, correspondences, change and preservation, key-condition
-contrasts, and links to existing knowledge are optional views, not ordered stages
-or required headings. Use only the view that resolves the current difficulty.
-For a comparison, map the relevant objects and relations, explain which inference
-can transfer, and locate the boundary. Distinguish resemblance, partial structural
-correspondence, and a verified isomorphism relative to the specified structure;
-an analogy is not a proof or permission to transfer every property.
-For a transformation, connect the target quantity to the changed representation,
-required compensation, and the relation or quantity preserved. Name an invariant
-only with the relevant transformation; approximations may preserve less or only
-within an error bound. A nearby case differing in a consequential condition can
-show why a method applies or fails without starting a classification lecture.
-If the correspondence or transformation remains hard to follow, consult the
-[structural explanation contrast](references/structural-explanation.md).
-
-When model choice or simplification is the comprehension gap, explain how the
-question determines relevant objects, boundaries, relationships, and required
-fidelity. Distinguish exact representation changes, task-specific equivalence,
-and conditional approximations: what is preserved, what is omitted, and when
-the model must be reconsidered. For representation changes, check domains,
-correspondence, and recoverability; no approximation does not imply no loss.
-Ground simplifications in applicable conditions, scale, or supported error
-estimates; do not invent assumptions or precision guarantees. Explain only the
-missing judgment; an explicit model and a request for a local result need no
-modeling lecture. Domain methods, calculations, and engineering validation retain
-their ownership. When these choices remain unclear, consult the
-[model-selection contrast](references/model-selection.md).
-
-For an unfamiliar method or multi-step derivation, distinguish why a step is
-valid from why it helps: connect the current obstacle to the chosen operation,
-what changes, and what remains unresolved. At first use, map a theorem or tool's
-objects to this problem and clarify unfamiliar symbol roles and required
-conditions. A theorem name or "repeat because a derivative remains" is not
-that connection. Skip support already demonstrated; these are completeness
-checks, not mandatory headings or a fixed number of steps. When a derivation
-still feels like instructions without reasons, consult the
-[worked derivation contrast](references/derivation-example.md).
-
-Use the user's useful language, correcting misleading meanings. A real obstacle
-may motivate a concept; do not manufacture a contradiction to introduce it.
-Expand when a connection is missing and compress into a usable summary when
-the relationships have been explained. Defer unrelated detail, never a condition
-that changes the conclusion. Do not withhold a requested explanation to preserve
-the user's "discovery" or require them to guess the next step.
-
-Choose the explanation medium for the current gap before producing a large
-artifact. Words, formulas, or a small table may suffice. For mixed explanations
-whose text, code, comparisons, and common relations need to be read together,
-use `answer-me-with-html` when available. For a standalone diagram requiring
-deliberate hierarchy or relation design, use `diagram-design` when available.
-Combine them only when a page needs a specific figure that native components
-cannot adequately express; do not run both by default or rebuild an adequate page.
-Carry the question, consequential relations, conditions, and source/evidence
-into the chosen medium without requiring a new request packet. Layout budgets
-and writing checks cannot erase conditions or failure paths. Check the final
-geometry, signs, labels, relationships, and agreement with the text. Keep simple
-results and plain-text requests direct; missing tools or failed rendering do not
-block the answer or justify a claim that an artifact was produced. For rendering,
-embedding, local revision, and returned feedback, consult
-[visual-explanation.md](references/visual-explanation.md).
-
-When the user identifies a breakpoint, check that the claimed step follows from
-its premises and source conditions. If it does, repair that connection before
-expanding the topic. If it does not, identify the missing condition or unsupported
-inference rather than manufacturing a bridge.
-
-Let purpose determine what comes first: `understand` addresses the gap; `act`
-gives the next action and boundary; `review` reports actual state and evidence
-level while preserving required source order; `decide` states the consequential
-choice and what changes it. Explain any key dependency in every mode. Let
-`desired_depth` (`quick`, `standard`, or `deep`) change the amount of support,
-never the conditions needed for a sound answer. A requested overview may come
-first; a narrow breakpoint may need only one connection.
-
-Use a comprehension check only when the learning task needs evidence and the
-teaching owner has not taken responsibility for it. Do not add one when the user
-opts out, withhold a requested answer behind a quiz, or treat a fluent response
-as proof of mastery. Revise the provisional starting point when feedback shows
-that the actual gap differs.
-
-## Natural Chinese Explanation
-
-Continue from the question the user just added and what is already clear; do not
-restart a self-contained article for every follow-up. When an abstract sentence
-hides who or what acts, under which condition, and with what result, expose the
-needed relation rather than merely swapping jargon for colloquial synonyms.
-Keep causal, contrast, and conditional links that help the reader follow the
-argument; remove only prefaces or repetition that add no understanding. Choose
-terms, formality, length, and structure for the task. Do not invent details to
-sound concrete, weaken uncertainty, or rewrite sentences that are already clear.
-An adjacent example or application can help establish or test the same relation;
-use it when it earns its space, without drifting into a separate lesson.
-When Chinese phrasing still obscures the bridge, consult
-[contextual examples](references/chinese-expression-examples.md); borrow their
-decisions, not their wording or facts.
-
-An upstream workflow may supply a Cognitive Bridge Request with `purpose`,
-`source_content`, `must_preserve`, `source_anchors`, `current_model_evidence`, and
-`desired_depth`. Honor those constraints when supplied; otherwise work directly
-from the conversation without constructing a packet or interrogating the user.
-Optional `development_goal`, `thinking_model`, and `model_path` may supply a
-current goal, provisional model content, or storage location. Existing requests
-remain valid. A path or embedded model content alone does not grant write
-permission or override the user's current request.
-
-Use [behavior-tests.md](references/behavior-tests.md) when changing or evaluating
-this Skill. These are semantic acceptance cases, not steps for every invocation.
+For evaluation, use [behavior scenarios](references/behavior-tests.md). They judge
+actual answers, not terminology counts, length, or claims of following this file.

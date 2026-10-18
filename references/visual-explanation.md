@@ -43,10 +43,10 @@ component catalog here. Native pages use extended Markdown and `am`; actual code
 quotes use permitted files and line ranges, while proposed code is marked a sketch.
 
 For a designed figure, read the relevant semantic/type reference and effective
-style guide. Existing project styling takes precedence. This user's approved
-default for unbranded personal explanations is neutral light styling and system
-fonts with Chinese fallbacks; this supplied choice need not be requested again.
-It does not authorize changing project branding or third-party core files.
+style guide. User/host choices and existing project styling take precedence.
+Absent a supplied style, neutral light styling and system fonts with Chinese
+fallbacks are a general fallback. A supplied choice need not be requested again;
+it does not authorize changing project branding or third-party core files.
 Static presentation is sufficient unless the current task needs interaction.
 
 When combination is warranted, use `scripts/export_svg.py` from the diagram

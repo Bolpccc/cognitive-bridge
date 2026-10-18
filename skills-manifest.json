@@ -1,17 +1,23 @@
 {
   "schema_version": 1,
   "repository": "Bolpccc/cognitive-bridge",
-  "repository_version": "2.4.0",
+  "repository_version": "3.0.0",
   "visibility": "public",
-  "external_skills": ["answer-me-with-html", "diagram-design"],
+  "external_skills": [
+    "answer-me-with-html",
+    "diagram-design"
+  ],
   "skills": [
     {
       "name": "cognitive-bridge",
-      "version": "2.4.0",
+      "version": "3.0.0",
       "path": ".",
       "visibility": "public",
       "depends_on": [],
-      "routes_to": ["answer-me-with-html", "diagram-design"],
+      "routes_to": [
+        "answer-me-with-html",
+        "diagram-design"
+      ],
       "install_target": "~/.codex/skills/cognitive-bridge"
     }
   ]

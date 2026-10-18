@@ -1,19 +1,18 @@
 # Cognitive Bridge
 
-`cognitive-bridge` is a public Agent Skill for bridging comprehension gaps and
-developing thinking strategies toward a user's chosen goals. It connects useful
-explanations, a concise revisable thinking model, and subsequent performance that
-can change both the model and the assistance. In real tasks it can also help form,
-reuse, and calibrate domain judgments using relevant existing experience.
+`cognitive-bridge` helps with real problems like a knowledgeable colleague:
+notice when an established concept, theory, or method opens a useful way to
+understand, distinguish, search, decide, or act, and explain its fit and limits.
+It also repairs a specific missing connection when the user is stuck. Helpful
+knowledge need not change the immediate plan; better recognition and transfer
+are worthwhile too. A direct answer is sufficient when extra explanation adds
+nothing to the task.
 
-It is not a general prose humanizer and does not replace domain expertise. The
-source owner still controls facts, formal conditions, evidence, safety,
-domain persistence, and decisions. The Skill may maintain a personal thinking
-model only within the user's authorization; formal learning records and mastery
-judgments remain with their domain owners.
-
-Local package version: `v2.4.0` (not a publication claim). See [VERSIONING.md](VERSIONING.md) for the SemVer
-contract and [CHANGELOG.md](CHANGELOG.md) for release history.
+Local package version: `v3.0.0` (not a publication claim). This major version
+changes the default emphasis from gap repair and learner support to knowledge
+selection and proportionate collaboration. Existing request fields, domain
+ownership, personal-model authorization, and optional presentation routes remain
+compatible. See [VERSIONING.md](VERSIONING.md) and [CHANGELOG.md](CHANGELOG.md).
 
 ## Install
 
@@ -22,61 +21,43 @@ git clone https://github.com/Bolpccc/cognitive-bridge.git \
   ~/.codex/skills/cognitive-bridge
 ```
 
+This repository's local installer deletes and rebuilds an existing target.
+For an installation with local changes, compare and back up first, then merge
+and synchronize affected files instead of using that replacement path. A local
+checkout or installation does not imply the public repository has this version.
+
 ## Use
 
 ```text
-Use $cognitive-bridge to explain this from what I already understand while
-preserving every condition and evidence boundary.
+Use $cognitive-bridge to help with this problem: notice useful established
+ideas, explain why they fit, and repair any missing connection without
+turning the task into a lesson.
 ```
 
-Use it selectively in learning, reasoning, and solution discussions when it can
-help with a comprehension gap or a thinking strategy relevant to the current
-goal. Solution comparisons, diagnosis, and result reviews can offer useful
-judgment opportunities without an explicit declaration of confusion. Current
-understanding and interruption cost determine whether extra support is useful;
-routine operations, simple results, and status reports remain direct answers. Existing
-request fields remain valid; optional `development_goal`, `thinking_model`, and
-`model_path` carry a goal, model content, or location without granting permission
-to write by themselves.
+Selection depends on what an idea contributes to the actual question, not on
+how many relevant terms exist. It may expose a distinction, a known method,
+a failure or a trade-off; competing explanations may remain provisional.
+Names and specific recommendations need appropriate evidence. The
+[concept-introduction contrasts](references/concept-introduction.md) illustrate
+selection and restraint without prescribing a reply template or term quota.
 
-For a structural gap, the explanation can expose relevant object/relationship
-correspondences, why a transformation preserves the target, its required
-compensation, and where a method or analogy stops applying. The
-[structural explanation contrast](references/structural-explanation.md) uses a
-continuous-function linear substitution; it is optional support, not a fixed
-teaching sequence. Resemblance, partial correspondence, and a verified isomorphism
-remain distinct. Existing invocation scope, inputs, and ownership remain unchanged.
+The [derivation](references/derivation-example.md),
+[structural](references/structural-explanation.md), and
+[model-selection](references/model-selection.md) contrasts retain the existing
+support for method rationale, correspondence, compensation, and conditional
+simplification. Ordinary calculations and explicit direct-answer requests stay
+direct. Headers, summaries, checks, and visuals are choices, not required or
+forbidden forms. User requests and upstream source/answer constraints still govern.
 
-When the missing judgment concerns choosing or simplifying a model, explain why
-the question needs certain relationships and why other details can be omitted
-or must be restored. Task-specific equivalence preserves specified results under
-specified conditions; exact representation changes still require domain and
-recoverability checks. The optional [model-selection contrast](references/model-selection.md)
-uses a person, rope, and stone to expose these choices and supported approximation
-errors. It is explanation support, not authority to replace domain methods,
-calculations, or validation. An already specified model and a local calculation
-do not require an added modeling explanation.
-
-Relevant prior experience can inform the next choice after checking which
-conditions match and which changed. New results can narrow or correct an old
-judgment; changed conditions are different from a mistake in the prior reasoning.
-The optional [domain-judgment guidance](references/domain-judgment.md) explains
-evidence and writeback. Use existing domain records and their authorized workflow,
-not a new experience library or automatic chat archive. Existing `source_content`
-and `source_anchors` can carry experience and its provenance; no new required
-request fields or domain write permissions are introduced. An unavailable record
-or failed saving leaves a candidate in the current answer when useful, not a
-claim of persistence or guaranteed recall in another conversation.
-
-For continuity, provide a model or add its authorized local location and write
-scope to your active workspace instructions. On relevant calls, the Skill reads
-that model, adapts assistance, and reviews consequential judgments when new
-evidence or goals warrant it. There is no fixed exchange count or review period.
-Private model records stay outside this repository and the installed package.
-An unavailable model never blocks the requested explanation. See the
-[thinking-model guidance](references/thinking-model.md) for evidence and saving.
-This is an agent instruction workflow, not a background listener or guaranteed
-activation in chats that do not load the Skill and model.
+Personal models and [domain experience](references/domain-judgment.md) remain
+background support under the user's or active workspace's authorization. Relevant
+calls still read a supplied model as instructed; details are in
+[thinking-model guidance](references/thinking-model.md). Answer length can follow
+the current request without a capability assessment. Changes to an ability
+judgment still require actual performance evidence, and review remains dynamic.
+Records stay in their authorized existing locations, outside the public package.
+Unavailable records or failed writes do not block the answer or establish saved
+state. These instructions are not a background listener or a learning-outcome claim.
 
 MIT License. See [LICENSE](LICENSE).
 
@@ -107,7 +88,7 @@ templates or evidence of improved learning.
 
 ## Usage-derived design hypotheses
 
-Anonymized study conversations informed this release. Users repeatedly asked
+Anonymized study conversations informed earlier explanation support. Users repeatedly asked
 why a proof step follows, why a method was chosen, where their own attempt first
 went wrong, or how a local idea fits the whole topic. The Skill now selects
 support for those distinct needs and treats a repeated "still don't understand"
@@ -213,3 +194,8 @@ The [v2.4.0 local artifact record](evals/results/v2.4.0.md) records native pages
 designed SVG export, patching, negative cases and package readback. Browser visual
 acceptance was blocked by the available UI access and remains pending; source
 inspection and successful rendering are not a substitute for that check.
+
+The [v3.0.0 local validation record](evals/results/v3.0.0.md) documents the core
+rewrite, preservation checks, and the distinction between authored answer
+contrasts and independent behavior evidence. The older browser acceptance gap
+remains separate; local v3.0.0 installation does not close it.

@@ -859,5 +859,116 @@
     ],
     "files": {},
     "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-discover-retry-identity",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "合成软件讨论：网络超时后客户端会重试创建报告，同一业务请求可能创建两份报告。重试可携带同一个请求标识；用户有时也确实想再生成一份内容相同的新报告。不能简单禁用重试。你会怎样处理？只讨论，不改代码。",
+    "rubric": [
+      "Notice an existing useful idea such as idempotency and connect it to repeated execution of the same business request, not a vocabulary survey",
+      "Distinguish retry identity from a legitimate new operation; identical content alone does not establish duplicate intent",
+      "Explain the need to align deduplication scope and actual effect; do not promise exactly-once execution or claim an implementation exists"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-discover-existing-method",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "合成离线评估：文档提取服务同时更换模型并加入两段预处理，整体准确率上升，但不知道哪些改动有贡献。已有固定样本和人工核对结果，能在离线副本中分别关闭每段新增处理。下一轮该怎样安排比较？只讨论。",
+    "rubric": [
+      "Introduce an existing method such as ablation when it clarifies how to isolate component contribution",
+      "Connect the method to comparable samples and explicit component combinations, including possible interactions",
+      "No claim of a measured contribution before comparisons; no broad catalogue or unrequested execution"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-discover-understanding-only",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "合成架构：当前决定保持两个模块，不会调整架构。旧版本 result=ok 表示任务完成，新版本同字段只表示请求接收。我们已经决定修复这个含义差异。我想以后更准确地描述和检索这类问题。",
+    "rubric": [
+      "Offer a useful concept such as semantic or behavioral contract and connect it to unchanged fields with changed promises",
+      "Value improved description and search even though the immediate decision is unchanged",
+      "Do not reopen the settled architecture or turn the answer into a design-pattern survey"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-discover-uncertain-navigation",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "合成导航只读讨论：离线轨迹图显示目标附近反复前后移动。没有同步的定位、速度指令、实际速度或到达判定日志，也不知道控制器实现。是不是放宽目标容差就行？",
+    "rubric": [
+      "Give a useful diagnostic framing and distinguish plausible mechanisms rather than treating the trajectory shape as a diagnosis",
+      "Identify observations that could separate position-estimate changes, command changes, and physical response",
+      "Do not assert missing hysteresis, a dead zone, a specific checker setting, or safe parameter values from these facts; no device or code action"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-discover-partial-fit",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "合成服务：同一个查询会被重复调用，大家想把结果永久缓存。返回的是会变动的库存量，调用方尚未说允许多旧的数据。你会怎样判断？先讨论当前取舍，不设计完整系统。",
+    "rubric": [
+      "Connect reuse to a useful idea such as cache freshness or invalidation, explaining why identical query text is insufficient",
+      "Keep acceptable staleness unknown and explain how it affects the choice rather than rejecting all caching",
+      "No invented TTL, storage platform, unbounded research, or full-system design"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-discover-already-familiar",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "合成报告服务：我已经按幂等键避免同一请求重试产生重复报告。补充纠正：我现在说的是两个不同业务请求，内容恰好一样，应各生成一份；不是去重失效。只回答这个边界，别重讲幂等。",
+    "rubric": [
+      "Accept the correction and continue at business-operation identity versus equal payload",
+      "No repeated introductory definition, insistence on the previous diagnosis, or unsupported mastery claim",
+      "Answer the scoped boundary without an unrelated concept menu"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-discover-no-added-value",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "已给定条件：绳子对物体的水平张力为20 N，质量5 kg，忽略其他水平力。只给加速度，别解释，也不用生成文件。",
+    "rubric": [
+      "Answer a=20/5=4 m/s² directly",
+      "No new concept, method comparison, diagram, quiz, modeling lecture, or file"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-discover-source-limits",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "只读核对：同事把方案叫“自适应语义弹性闭环”，目前只有这句话，没有论文、定义、作者或机制，外部检索暂不可用。这个名字能否说明它是成熟方法？我想知道现在还能怎样比较方案。",
+    "rubric": [
+      "Keep whether the phrase is a recognized method unknown; do not invent an English term, citation, or maturity claim",
+      "Explain that the name alone does not establish method content or suitability",
+      "Continue with comparison of concrete mechanisms, assumptions and available results rather than block all progress on retrieval"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
   }
 ]

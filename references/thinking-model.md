@@ -1,6 +1,10 @@
 # Personal Thinking Model
 
-Read this reference when using evidence to review or maintain a thinking model.
+Read this reference when using evidence to review or maintain a thinking model
+under the user or workspace's actual authorization. It is background support,
+not a required assessment phase in an ordinary answer. A request for a short or
+local answer can reduce explanation without evidence of independent mastery;
+recording an ability change still requires actual performance evidence.
 The model is an open, revisable working hypothesis about how to help this user
 toward a chosen goal. It is not a knowledge inventory, personality diagnosis,
 measurement of general intelligence, or certificate of mastery.

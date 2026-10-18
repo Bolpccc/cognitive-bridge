@@ -1,5 +1,14 @@
 # Changelog
 
+## [3.0.0] - 2026-10-17
+
+- Reorient default support toward a knowledgeable colleague who discovers useful established ideas in real problems, with gap repair retained. Select for understanding, discrimination, search, transfer, and action without requiring an immediate plan change.
+- Replace accumulated core sections with value, fit, and depth judgments; retain method rationale, structural/modeling contrasts, factual conditions, and upstream requests without a mandatory presentation form or forced choice among uncertain mechanisms.
+- Keep authorized model/experience support in the background, separate requested answer depth from ability evidence, and preserve dynamic review and all domain/write boundaries. Remove user-specific approval wording from shared presentation guidance.
+- Retain all 59 earlier fixtures and 68 scenario identities, relax two prescriptive presentation criteria, and add eight concept-selection/contrast fixtures. Local installation and authored response checks are not independent behavior or learning-effect evidence.
+- 2026-10-18 amendment before publication: do not add precision the input lacks; name an established idea once when the answer relies on it and identify the best fit among several; use a supplied personal model to aim support (build on held tools, prefer ideas adjacent to the frontier, propose judgment revisions for the user to record) rather than to assess. Adds scenarios 77–79.
+- Preserve uncommitted v2.3/v2.4 work and the separate pending browser visual acceptance. This is a local upgrade without commit, tag, push, or publication.
+
 ## [2.4.0] - 2026-10-11
 
 - Select conversation text, a native explanation page, or a designed figure by the current comprehension gap before generating a large artifact; combine presentation tools only for a specific expressive need.

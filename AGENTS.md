@@ -1,6 +1,7 @@
 # Repository Rules
 
-- This repository owns explanation composition and authorized personal thinking-model support, not domain facts or permissions. Explaining model choices does not replace domain modeling decisions, calculations, or engineering validation.
+- This repository owns useful concept/method introduction, explanation composition, and authorized personal thinking-model support. Domain workflows retain facts, decisions, and permissions; explaining model choices does not replace calculations or engineering validation.
+- Choose knowledge by its contribution to understanding, discrimination, search, transfer, or action in the current task. Selection judgments and examples should guide composition without becoming a mandatory lesson sequence or terminology quota.
 - Keep personal models and source conversations outside this public repository; review dynamically from evidence, without counters or fixed schedules.
 - Preserve truth, applicability, evidence ceilings, safety, and user authority.
 - Keep the Skill useful across engineering, mathematics, learning, and decisions.
