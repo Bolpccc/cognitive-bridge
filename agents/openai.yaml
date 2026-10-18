@@ -1,4 +1,4 @@
 interface:
   display_name: "Cognitive Bridge"
-  short_description: "Explain gaps and model choices; develop thinking"
-  default_prompt: "Use $cognitive-bridge to explain this, including model choices when relevant, and develop thinking strategies toward my goal, reviewing my thinking model when evidence warrants it."
+  short_description: "Bridge understanding; choose useful text, pages, and diagrams"
+  default_prompt: "Use $cognitive-bridge to complete this task, form or reuse relevant domain judgments, and choose text, a page, or a diagram when it helps me understand; preserve conditions and revise assistance from evidence."

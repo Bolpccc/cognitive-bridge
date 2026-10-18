@@ -54,6 +54,19 @@ Assess collaboration quality separately from independent user capability. Better
 joint results do not establish learning, and a user's ability to challenge an
 AI's omitted premise is evidence about that specific judgment, not all cognition.
 
+## Domain Judgment Is Not User Mastery
+
+Relevant domain experience may be cited to identify what judgment the user applied
+and under which conditions. Keep the judgment's rationale and evidence in its
+existing domain record; the personal model retains actual application, assistance
+given, and useful next support, without duplicating domain facts or creating
+another capability profile. Reliable experience does not demonstrate that the
+user can apply it, and fluent independent recall does not make a judgment correct.
+Saying "understood", prompted completion, independent use, and changed-case
+transfer are different observations. A follow-up may check a boundary rather than
+show lack of mastery. Upgrading the Skill is not performance evidence.
+For experience selection and revision, consult [domain-judgment.md](domain-judgment.md).
+
 ## Authorized Persistence
 
 The user or active workspace instructions determines the model and write scope.

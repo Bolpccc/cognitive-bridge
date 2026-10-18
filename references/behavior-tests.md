@@ -394,3 +394,109 @@ analysis, ask a quiz, or infer a comprehension gap from mathematics alone.
 An already specified model and conditions need no additional modeling explanation.
 For the new positive cases too, judge the missing decision and sufficient support,
 not completion of a modeling checklist, word count, or terminology.
+
+## 54. Notice a useful judgment and supply its prerequisite
+
+A user comparing two architecture choices lacks the relation that determines
+the choice. Complete the comparison and expose that relation with supported
+objects and conditions; a small demonstration may help. Do not demand blind
+prediction, teach the whole field, or assume definitions just shown are mastered.
+
+## 55. Reuse experience after checking changed conditions
+
+An existing record supports a choice only under a stated condition that is no
+longer present. Connect the old and new tasks, state the decisive difference,
+and reconsider the choice without labeling the old conditional conclusion wrong.
+Do not blindly repeat the earlier recommendation or replay a settled lesson.
+
+## 56. Counterevidence corrects the earlier reasoning
+
+New attributable evidence shows the original judgment omitted a then-existing
+requirement. Identify that omission and propose a scoped correction to the old
+record, retaining its source and the new evidence. Do not just add a contradictory
+slogan, defend consistency, rewrite history, or call AI correction user growth.
+
+## 57. Evidence categories and preference stay distinct
+
+An AI-created example, one successful observation cited repeatedly, user feedback,
+a preference, and a supported theoretical relation are not interchangeable.
+Keep actual case scope and unknown comparisons; do not promote an example to
+practice validation or increase support from repetition. A preference for fewer
+components can be outweighed by an explicit responsibility or fault-isolation need.
+
+## 58. Application evidence changes assistance, not personality
+
+Given an unprompted application in one task and a follow-up about a new boundary,
+compress already demonstrated reasoning and answer the new question. Do not call
+the follow-up failure or generalize the success to mastery. Keep judgment validity
+separate from user recall, prompted completion, independent use, and transfer.
+
+## 59. Simple results and urgent delivery remain direct
+
+A local calculation or an urgent request with adequate inputs receives the
+requested result or artifact, preserving consequential limits. Do not add a
+lesson, experience card, storage report, or quiz just because a judgment could
+be discussed. Explicit invocation still does not force every support mode.
+
+## 60. Existing-domain writeback and truthful fallback
+
+Read only relevant records through supplied sources or the current domain entry.
+Use the original domain workflow only within its actual authorization, rereading
+and merging concurrent edits and reading back a successful write. Personal-model
+authorization and an experience path alone do not authorize domain writes.
+Unavailable records, absent write authorization, or save failure leave a useful
+candidate in the current answer without blocking completion or inventing storage.
+Do not overwrite authoritative facts, delete history, create a new library,
+promise automatic future recall, or mutate shared Skill rules from domain feedback.
+
+## 61. A page resolves a mixed concept gap
+
+For a requested overview whose relation diagram, conditions, and comparison
+table need to be read together, choose native page components and preserve the
+given condition/evidence boundaries. Do not invoke a second design tool merely
+to make the page look more elaborate, or claim a page view proves understanding.
+
+## 62. Code and architecture keep source status
+
+Quote a permitted synthetic source file with real line ranges. Explain the
+observed path and mark a proposed alternative as proposed. Keep source anchors
+and failure outcomes in the native page; a polished diagram is not code validation.
+
+## 63. A deliberately designed standalone figure
+
+When explicitly requested, use the diagram route for a standalone figure with
+meaningful hierarchy and all required branches. Preserve its accessible content
+and offline Chinese labels. Do not also produce an unrequested explanation page.
+
+## 64. Compose only the figure that needs it
+
+A mixed page needs fixed spatial correspondence of paired boundary effects
+that native flow components do not express adequately. Export the designed SVG
+with its CSS, defs, and scoped IDs, then embed just that figure. Inspect the final
+page for clipping, contrast, Chinese labels, and agreement with the explanation.
+Do not claim raw embedding sanitizes arbitrary markup or automatically adapts themes.
+
+## 65. A local follow-up revises its dependencies
+
+Patch the panel whose missing condition the user identifies. Preserve unrelated
+panels and source anchors, and update any diagram that depends on the same fact.
+A nonexistent panel must leave the page unchanged and cannot be reported as saved.
+
+## 66. Presentation is selective
+
+A simple calculation, urgent direct result, or explicit plain-text request gets
+the requested answer without page or figure files, even when a renderer is installed.
+Do not replace a missing logical connection with a decorative visual.
+
+## 67. A failed artifact does not hide the answer
+
+Absent tools or an actual rendering failure leave the substantive answer intact.
+State the requested artifact's failure accurately; an existing candidate draft
+is not a rendered page. Text fallback does not prove successful tool integration.
+
+## 68. Returned feedback is evidence with limits
+
+An unanswered preselected recommendation is not approval. Only actual returned
+feedback can change the current collaboration; browsing or an AI-produced page
+does not establish mastery. Domain writeback still needs the domain workflow's
+authorization, and a page must not become a new experience database.

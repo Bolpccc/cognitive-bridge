@@ -3,7 +3,8 @@
 `cognitive-bridge` is a public Agent Skill for bridging comprehension gaps and
 developing thinking strategies toward a user's chosen goals. It connects useful
 explanations, a concise revisable thinking model, and subsequent performance that
-can change both the model and the assistance.
+can change both the model and the assistance. In real tasks it can also help form,
+reuse, and calibrate domain judgments using relevant existing experience.
 
 It is not a general prose humanizer and does not replace domain expertise. The
 source owner still controls facts, formal conditions, evidence, safety,
@@ -11,7 +12,7 @@ domain persistence, and decisions. The Skill may maintain a personal thinking
 model only within the user's authorization; formal learning records and mastery
 judgments remain with their domain owners.
 
-Local package version: `v2.2.0` (not a publication claim). See [VERSIONING.md](VERSIONING.md) for the SemVer
+Local package version: `v2.4.0` (not a publication claim). See [VERSIONING.md](VERSIONING.md) for the SemVer
 contract and [CHANGELOG.md](CHANGELOG.md) for release history.
 
 ## Install
@@ -30,7 +31,10 @@ preserving every condition and evidence boundary.
 
 Use it selectively in learning, reasoning, and solution discussions when it can
 help with a comprehension gap or a thinking strategy relevant to the current
-goal. Routine operations and status reports remain direct answers. Existing
+goal. Solution comparisons, diagnosis, and result reviews can offer useful
+judgment opportunities without an explicit declaration of confusion. Current
+understanding and interruption cost determine whether extra support is useful;
+routine operations, simple results, and status reports remain direct answers. Existing
 request fields remain valid; optional `development_goal`, `thinking_model`, and
 `model_path` carry a goal, model content, or location without granting permission
 to write by themselves.
@@ -52,6 +56,17 @@ uses a person, rope, and stone to expose these choices and supported approximati
 errors. It is explanation support, not authority to replace domain methods,
 calculations, or validation. An already specified model and a local calculation
 do not require an added modeling explanation.
+
+Relevant prior experience can inform the next choice after checking which
+conditions match and which changed. New results can narrow or correct an old
+judgment; changed conditions are different from a mistake in the prior reasoning.
+The optional [domain-judgment guidance](references/domain-judgment.md) explains
+evidence and writeback. Use existing domain records and their authorized workflow,
+not a new experience library or automatic chat archive. Existing `source_content`
+and `source_anchors` can carry experience and its provenance; no new required
+request fields or domain write permissions are introduced. An unavailable record
+or failed saving leaves a candidate in the current answer when useful, not a
+claim of persistence or guaranteed recall in another conversation.
 
 For continuity, provide a model or add its authorized local location and write
 scope to your active workspace instructions. On relevant calls, the Skill reads
@@ -101,10 +116,27 @@ earlier context only when it identifies the learning object and missing link.
 These are design inferences from observed requests, not measured improvements
 in learning or evidence that the pattern applies to every user or subject.
 
-A visual may make a spatial relation easier to inspect, but it can also teach a
-false relationship if the geometry or labels are wrong. The Skill therefore
-allows a visual when useful and requires the represented relation to be checked;
-it does not require one for every explanation or prescribe a production tool.
+A visual may make a spatial relation easier to inspect, but wrong geometry or
+labels can teach a false relationship. Choose a medium for the current gap:
+conversation text for local results, `answer-me-with-html` native components for
+mixed explanation pages, or `diagram-design` for a deliberately designed figure.
+Combine only when a specific figure cannot be adequately expressed natively.
+The optional [visual-explanation guidance](references/visual-explanation.md)
+covers handoff, SVG export, local patching, actual returned feedback, and fallback.
+These conditional external routes are not hard dependencies of a useful answer.
+No always-on rule, new renderer, storage platform, or input field is introduced.
+Presentation tools do not receive domain decision or write authority.
+
+The local integration was imported from fixed upstream commits:
+[answer-me-with-html](https://github.com/QingYunA/answer-me-with-html/tree/533c39fd47d814a6bee3d9c1df388345f4e4c858/skills/answer-me-with-html)
+(CLI 0.5.0, Node.js 20+) and
+[diagram-design](https://github.com/cathrynlavery/diagram-design/tree/7a2e22170ee838e859d8142ba825d83f8b6375e6/skills/diagram-design)
+(Skill metadata 2.6, packaged Python self-check/export helpers). They remain
+independent packages; their code and license copies are not vendored here.
+Use the existing skill-installer with those repository paths and fixed refs when
+installing the optional routes. Basic package validation does not require them;
+`--installed-root` requires both for full integration availability checks. Do not
+invent stable SemVer metadata for an upstream package that does not expose it.
 
 ## Validation layers
 
@@ -174,3 +206,10 @@ learner-effect claim.
 The [v2.2.0 author walkthroughs](evals/results/v2.2.0.md) assess the missing
 modeling judgment, proportionate support, conversion conditions, and the direct
 calculation negative case. They retain the same evaluation limits.
+The [v2.3.0 validation record](evals/results/v2.3.0.md) separates package checks,
+synthetic storage checks, and domain-judgment author walkthroughs from unmeasured
+implicit activation, independent behavioral reliability, and learner outcomes.
+The [v2.4.0 local artifact record](evals/results/v2.4.0.md) records native pages,
+designed SVG export, patching, negative cases and package readback. Browser visual
+acceptance was blocked by the available UI access and remains pending; source
+inspection and successful rendering are not a substitute for that check.

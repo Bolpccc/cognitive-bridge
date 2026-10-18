@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.4.0] - 2026-10-11
+
+- Select conversation text, a native explanation page, or a designed figure by the current comprehension gap before generating a large artifact; combine presentation tools only for a specific expressive need.
+- Declare conditional external presentation routes without hard dependencies or changes to domain ownership, request fields, permissions, or dynamic model review. Preserve source conditions and failure paths across presentation budgets.
+- Add optional rendering, offline SVG composition, local revision, and returned-feedback guidance, with semantic fixtures and actual local artifact checks. Missing tools or rendering failure still leave a complete answer and truthful artifact status.
+- Retain the uncommitted v2.3.0 work and private records outside the public package. Local upgrade only; no commit, push, tag, publication, or learner-effect claim.
+
+## [2.3.0] - 2026-10-11
+
+- Recognize useful domain-judgment opportunities in learning, solution comparisons, diagnosis, and result reviews; choose support by the current goal, demonstrated understanding, and interruption cost without a fixed teaching sequence.
+- Reuse relevant existing experience only after checking conditions; distinguish a changed situation from flawed prior reasoning and keep judgment evidence separate from independent user application.
+- Add optional domain-judgment guidance, acceptance scenarios, evaluation fixtures, and author walkthroughs for prerequisites, reuse, counterevidence, restraint, and authorized-writeback fallbacks.
+- Retain existing request fields, explanation capabilities, dynamic review, and domain ownership. Experience stays in existing authorized domain records; no new store, background mechanism, or automatic ability assessment. Local upgrade only, without commit, push, tag, or publication.
+
 ## [2.2.0] - 2026-10-08
 
 - Explain model choice and simplification only when they resolve the current comprehension gap: connect the question to relevant objects, boundaries, relationships, and required fidelity without a fixed modeling process.

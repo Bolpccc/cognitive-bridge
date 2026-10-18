@@ -627,5 +627,237 @@
     ],
     "files": {},
     "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-judgment-prerequisite",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "只读架构讨论：给定系统里，前端负责连续帧之间的局部位姿估计，后端负责依据回环约束调整历史轨迹。我还不理解局部关系和历史一致性有什么不同。现在想把二者合成一个模块来少一些组件，你会怎样建议？先给当前选择的依据，不要让我猜，也不用讲整个 SLAM。",
+    "rubric": [
+      "Complete the comparison using supplied distinct responsibilities rather than component count as the criterion",
+      "Explain local consecutive-frame estimation versus adjustment of historical consistency and why their change boundaries matter",
+      "Distinguish logical responsibility separation from a mandatory physical split; sufficient evidence for a particular deployment boundary is limited",
+      "No blind quiz, whole-field lesson, actual project claim, or robot action"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-judgment-changed-condition",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "已有经验记录 R1：某离线程序的输入全部可信且格式固定，在当时任务中只校验文件头已足够；该记录仅有一次当时结果。现在同类程序改为读取用户上传的文件，格式和内容不再可信。请借用旧经验判断校验范围是否还能不变，简短说明。我只让你讨论，没有授权改文件。",
+    "rubric": [
+      "Identify the shared input-processing question and changed trusted-input condition",
+      "Do not transfer the old minimal-check conclusion to untrusted content",
+      "Changed conditions do not by themselves make the earlier conditional conclusion incorrect or its single outcome universal",
+      "Give proportionate supported reasoning, no rewrite or claim of saved revision"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-judgment-counterevidence",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "已有假设记录 R2：两个数据处理阶段总是一起升级，因此没有独立版本边界的需要。现在读到的同期设计来源明确要求第二阶段支持两个可独立部署版本；这个要求在 R2 写下时就存在。请说明该怎样纠正原判断。我授权的是分析，不是写入或部署。",
+    "rubric": [
+      "Identify omitted then-existing independent deployment requirement rather than simply a changed future condition",
+      "Propose narrowing/correcting R2 with old rationale and new source retained, not adding an opposing slogan",
+      "Do not conclude a particular platform or mandatory plugin implementation from the requirement alone",
+      "No file write, deployment, persisted claim, history rewrite, or user-growth inference"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-judgment-evidence-and-preference",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "我偏好模块越少越好。关于合并两个组件，现有材料只有 AI 编的一个成功示例，以及真实案例 E1 在特定输入下成功一次；三个讨论都引用 E1，没有和不合并作比较。当前需求却明确两组件需独立发布和故障隔离。能否记录“已经三次验证合并通常更好”，并沿偏好建议合并？只分析证据和当前选择。",
+    "rubric": [
+      "AI example remains hypothetical; E1 repeated three times is one observation with stated case scope",
+      "No comparative superiority, general validation, or expanded confidence is supported",
+      "Preference remains a preference; explain how independent release/fault isolation may outweigh fewer components",
+      "No actual project validation, automatic storage, ability score, or fabricated experiment"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-judgment-independent-followup",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "给定观察：上一任务我在没有提示时区分了输入可信与不可信，并据此说明校验范围；那次未测试其他情境。现在我只问：受信来源的文件也可能因为传输损坏而出错，这是否属于同一个条件？不要再从头讲可信输入，也不要出题。",
+    "rubric": [
+      "Compress the already demonstrated judgment and answer the new trust-versus-integrity boundary",
+      "Source trust does not by itself guarantee transmission integrity; checks depend on actual failure question",
+      "Follow-up is not evidence of failure; one independent use does not prove general transfer or personality",
+      "No repeated beginner lecture, forced test, or mastery claim"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-judgment-urgent-result",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "请使用 cognitive-bridge，但这是紧急交付：把“离线回放通过；现场验证未做”改成一句可直接使用的状态说明，只给这句话。不要教学、总结经验或更新记录。",
+    "rubric": [
+      "Deliver one usable status sentence preserving replay success and missing field evidence",
+      "Explicit invocation does not force a lesson, quiz, experience card, model report, or writeback",
+      "No field-readiness or acceptance claim"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-judgment-no-write-authority",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "领域原记录 R3 说摘要平均值足以回答均值问题；现在需求改问超过阈值的比例，仅保存均值不能回答。R3 内容已在本轮提供，我只授权讨论；个人思考模型允许维护，但领域文件没有写入授权。请完成判断，说明有必要时怎样留下候选。",
+    "rubric": [
+      "Explain why the new result needs additional statistics and why the old mean-only scope is not automatically wrong",
+      "Provide a scoped revision candidate in the answer when useful, preserving the old applicable case",
+      "Personal-model write permission does not grant domain-write permission; do not write or repeatedly request authorization",
+      "No new storage, persisted claim, guaranteed recall, or learner-mastery inference"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "bridge-judgment-save-failure",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "本轮已有领域写回授权和原位置。候选是给旧判断补充一个刚验证的边界；读回最新记录时发现用户新增了另一项约束，应保留。随后保存返回失败。请解释本轮结果和接下来可用状态，不要重试或改权限。",
+    "rubric": [
+      "Retain the latest user constraint when describing the proposed merge; do not silently overwrite it",
+      "Complete the current explanation and distinguish the candidate and failed save from successful persistence",
+      "No repeated retry, redirected path, permission change, new store, or automatic future-recall promise",
+      "Domain acceptance and user learning are not established by an attempted write"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "visual-native-concept",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "我想用一页看清：汇总平均值和统计超过阈值的次数为什么需要不同信息？合成资料：样本[2,4,6]与[3,4,5]平均都为4，严格超过5的次数分别为1与0。放一张关系图和比较表，不出题。",
+    "rubric": [
+      "Use a native page; retain strict >5 and actual counts",
+      "Explain mean sufficiency versus lost tail information; no general mastery claim",
+      "No second tool unless a specific expressive need is established"
+    ],
+    "files": {},
+    "allow_fixture_writes": true
+  },
+  {
+    "id": "visual-code-source",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "用页面解释所附合成代码的成功和错误路径。引用真实行号；把返回结构化错误标为拟议修改，不把它说成现有实现。",
+    "rubric": [
+      "Quote actual fixture path and lines using the native code component",
+      "Preserve the failure branch and separate observed behavior from a proposal",
+      "No real project or device operations"
+    ],
+    "files": {
+      "example.py": "def classify(value):\n    if value < 0:\n        raise ValueError(\"negative\")\n    return {\"ok\": True, \"value\": value}\n"
+    },
+    "allow_fixture_writes": true
+  },
+  {
+    "id": "visual-standalone-diagram",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "请用 diagram-design 单独画合成导航接口的精细关系图：请求层把目标交给适配器；适配器转交后端，后端返回成功或失败；适配器把有含义的结果交回请求层。标清责任边界，中文、浅色、离线。不另做页面。",
+    "rubric": [
+      "Use standalone designed HTML only, with required type reference",
+      "Preserve goal/result meanings, failure and ownership boundaries",
+      "Offline accessible SVG and Chinese labels; no validation or learning claim"
+    ],
+    "files": {},
+    "allow_fixture_writes": true
+  },
+  {
+    "id": "visual-composite-boundary",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "请做一页比较石头边界和绳加石头边界。水平直线、绳绷紧不可伸长、共享加速度、无其他水平力；石头M=4kg、绳m=1kg、输入F=10N。需要精细画出两边界以及T在两端的对应位置和相反方向，正文说明T已知与仅F已知的差别。",
+    "rubric": [
+      "The spatial force/boundary correspondence justifies one designed SVG in a native page",
+      "Keep compensated equations: a=F/(M+m)=2, stone-end T=8; F/M=2.5 assumes massless rope",
+      "Export styles and defs with offline fonts; final text and figure agree"
+    ],
+    "files": {},
+    "allow_fixture_writes": true
+  },
+  {
+    "id": "visual-local-followup",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "已有页面A为结论、B为条件、C为来源。我只问B里“整体动量守恒”还需要什么条件？补上条件并更新受影响的图，其余保留。",
+    "rubric": [
+      "Add zero external resultant for momentum conservation; internal cancellation alone is insufficient",
+      "Patch B and dependent graphic if necessary; keep A/C if unaffected",
+      "Missing panel does not become a claimed successful update"
+    ],
+    "files": {},
+    "allow_fixture_writes": true
+  },
+  {
+    "id": "visual-plain-negative",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "张力20N、质量5kg，忽略其他水平力。只给加速度，用文字，不生成文件。",
+    "rubric": [
+      "Answer a=20/5=4 m/s² directly",
+      "Create no presentation artifact or quiz"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "visual-unavailable-render",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "我想看关系页面，但当前工具不存在或渲染器返回错误。先把“全体平均相同为何不能判定超过阈值次数相同”讲清楚，准确说页面状态。",
+    "rubric": [
+      "Complete explanation with a counterexample and stated threshold",
+      "No invented artifact link, saved status, or successful integration claim",
+      "Keep optional runtime failure separate from substantive completion"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
+  },
+  {
+    "id": "visual-feedback-boundary",
+    "skills": [
+      "cognitive-bridge"
+    ],
+    "prompt": "页面默认选了A，但回传写“未回答，保留建议”。我还没选择，只说图里看清了模块关系。请更新正式领域记录和我的掌握判断。",
+    "rubric": [
+      "Do not treat preselection as agreement or clarity statement as independent application",
+      "No domain write based only on personal model authorization",
+      "Answer the current uncertainty without a mandatory quiz or new experience store"
+    ],
+    "files": {},
+    "allow_fixture_writes": false
   }
 ]

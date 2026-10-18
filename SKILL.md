@@ -1,8 +1,8 @@
 ---
 name: cognitive-bridge
-description: "Bridge a demonstrated comprehension gap, or develop thinking strategies in learning, reasoning, and solution discussions using an evidence-based, revisable thinking model. Review that model when new evidence or goals warrant it. Not for routine operations, status reports, casual chat, or prose polishing."
+description: "Bridge comprehension gaps and help form, reuse, and calibrate domain judgments in learning, solution comparisons, diagnosis, and result reviews when useful to the user's goal. Use relevant existing experience and an evidence-based, revisable thinking model. Not for routine operations, simple results, status reports, casual chat, or prose polishing."
 metadata:
-  version: 2.2.0
+  version: 2.4.0
 ---
 
 # Cognitive Bridge
@@ -28,7 +28,9 @@ the assistance it informs; adaptation should expand what the user can do.
   thinking-strategy model. Domain workflows retain facts, decisions, safety,
   formal learner records, and mastery judgments. Personal-model permission does
   not authorize changing source documents, external systems, or domain records.
-  Do not add domain workflows or invoke companion Skills in reverse.
+  Do not add domain workflows or invoke domain-owner Skills in reverse.
+  Presentation Skills may render a chosen explanation; this does not transfer
+  domain decisions, verification, or write permissions to them.
 - If a material source conflict cannot be resolved from supplied evidence, flag
   `semantic-input-conflict`, identify both anchors and the evidence or decision
   needed. Do not invent a resolution; continue any explanation independent of it.
@@ -41,6 +43,9 @@ reasoning, or solution task offers a useful opportunity to improve a strategy
 toward the user's goal, even without an explicit "I don't understand". Use model
 review when requested or when new evidence could change a consequential judgment
 or the next assistance. These supports may overlap; they are not response stages.
+In solution comparisons, diagnosis, or result reviews, notice judgments worth
+forming or reusing. Choose support by current goal, demonstrated understanding,
+and interruption cost; opting out of extra support can be the right choice.
 Answer routine requests directly without adding training or a model report.
 
 When a personal model or authorized location is supplied by the user or active
@@ -80,6 +85,29 @@ For model evidence, correction, or persistence, consult
 [thinking-model.md](references/thinking-model.md). Keep personal observations out
 of the shared Skill rules. Report a model change only when useful to the user;
 ordinary relevant answers need no visible model section.
+
+## Form, Reuse, and Calibrate Domain Judgments
+
+While completing the task, make a useful judgment's decisive cue, reason, and
+conditions visible when they help. Supply a necessary prerequisite or worked
+example rather than asking the user to guess without a basis. A condition-change
+contrast, brief recall, or result review is optional, not a recurring lesson.
+When relevant existing experience is supplied or locatable through the active
+domain entry, read only what this task needs. Compare its conditions with the
+current case before transferring the judgment; do not replay a settled lesson.
+New evidence may warrant narrowing or correcting an old judgment. Distinguish
+changed conditions from a flaw in the earlier reasoning; preferences and one
+successful result are not general rules. Keep evidence for the judgment separate
+from evidence of the user's independent application, and reduce redundant help
+where actual performance warrants it.
+
+Leave reusable experience in the domain's existing records through its authorized
+workflow. This Skill can identify a useful candidate and explain a revision;
+it does not acquire domain write permissions or authority over facts by doing so.
+No new experience store, compulsory card, or background task is required. Missing
+records or failed saving do not block completion; do not claim persistence without
+successful writeback and readback. For experience reuse, evidence, or revision,
+consult [domain-judgment.md](references/domain-judgment.md).
 
 ## Compose
 
@@ -159,10 +187,21 @@ the relationships have been explained. Defer unrelated detail, never a condition
 that changes the conclusion. Do not withhold a requested explanation to preserve
 the user's "discovery" or require them to guess the next step.
 
-When a spatial or structural relation remains hard to follow, or the user asks
-to see it, consider a diagram or other visual. Check that its geometry, signs,
-labels, and stated relationships are accurate before relying on it. Do not add
-a visual when words or a small calculation make the connection clear enough.
+Choose the explanation medium for the current gap before producing a large
+artifact. Words, formulas, or a small table may suffice. For mixed explanations
+whose text, code, comparisons, and common relations need to be read together,
+use `answer-me-with-html` when available. For a standalone diagram requiring
+deliberate hierarchy or relation design, use `diagram-design` when available.
+Combine them only when a page needs a specific figure that native components
+cannot adequately express; do not run both by default or rebuild an adequate page.
+Carry the question, consequential relations, conditions, and source/evidence
+into the chosen medium without requiring a new request packet. Layout budgets
+and writing checks cannot erase conditions or failure paths. Check the final
+geometry, signs, labels, relationships, and agreement with the text. Keep simple
+results and plain-text requests direct; missing tools or failed rendering do not
+block the answer or justify a claim that an artifact was produced. For rendering,
+embedding, local revision, and returned feedback, consult
+[visual-explanation.md](references/visual-explanation.md).
 
 When the user identifies a breakpoint, check that the claimed step follows from
 its premises and source conditions. If it does, repair that connection before
